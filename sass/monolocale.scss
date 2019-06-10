@@ -1,0 +1,16 @@
+.monolocale{
+    // background-color: $color-secondary;
+    grid-column: center-start / center-end;
+}
+
+.card{ 
+    
+    width: 50%;
+    &-img{
+        padding:1rem;
+        
+    }
+    &-columns{
+        
+    }
+}

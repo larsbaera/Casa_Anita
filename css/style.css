@@ -1,0 +1,70 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  background-color: #f9f7f6;
+  font-family: "Nunito", sans-serif;
+  color: #6D5D4B;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.bodyLayout {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 100vh repeat(5, min-content);
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] 1fr [full-end]; }
+
+section {
+  margin: 10rem 0;
+  font-size: 1.5rem;
+  text-align: center; }
+
+.header {
+  margin: 2rem;
+  background-color: cornflowerblue;
+  background-size: cover;
+  grid-column: full-start / full-end; }
+
+.title {
+  color: yellow;
+  text-align: center;
+  margin: 25rem auto;
+  width: max-content; }
+
+.headerTitle {
+  font-size: 7rem; }
+
+.headerParagraph {
+  font-size: 3rem; }
+
+.monolocale {
+  grid-column: center-start / center-end; }
+
+.card {
+  width: 50%; }
+  .card-img {
+    padding: 1rem; }
+
+.bilocale {
+  grid-column: center-start / center-end; }
+
+.trilocale {
+  grid-column: center-start / center-end; }
+
+.information__terms {
+  background-color: #54483A;
+  grid-column: center-start / col-end 4; }
+
+.information__map {
+  background-color: #B28451;
+  grid-column: col-start 5/center-end; }
+
+.footer {
+  background-color: #6D5D4B;
+  grid-column: full-start / full-end; }

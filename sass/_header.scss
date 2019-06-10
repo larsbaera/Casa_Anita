@@ -1,0 +1,32 @@
+.header{
+    margin: 2rem;
+    // background-image: url(/img/header-img.jpg);
+    background-color: cornflowerblue;
+    background-size: cover;
+    
+    // height:100vh;
+
+    grid-column: full-start / full-end;
+}
+.title{
+    // background-color: darkblue;
+    color:yellow;
+    text-align: center;
+    margin: 25rem auto;
+    width:max-content;
+}
+.headerTitle{
+    font-size: 7rem;
+}
+
+.headerParagraph{
+    font-size:3rem;
+}
+
+.readMore{
+
+}
+
+.buttons{
+    
+}

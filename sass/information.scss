@@ -1,0 +1,11 @@
+.information{
+    &__terms{
+        background-color: #54483A;
+        grid-column: center-start / col-end 4;
+    }
+    &__map{
+        background-color:#B28451;
+        grid-column: col-start 5/center-end;
+    }
+}
+
