@@ -18,7 +18,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-rows: 100vh repeat(5, min-content);
-  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] 1fr [full-end]; }
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 10rem) [col-end]) [center-end] 1fr [full-end]; }
 
 section {
   margin: 10rem 0;
@@ -32,7 +32,7 @@ section {
   grid-column: full-start / full-end; }
 
 .title {
-  color: yellow;
+  color: white;
   text-align: center;
   margin: 25rem auto;
   width: max-content; }
@@ -42,6 +42,12 @@ section {
 
 .headerParagraph {
   font-size: 3rem; }
+
+.readMore {
+  font-size: inherit; }
+
+.buttons {
+  font-size: inherit; }
 
 .monolocale {
   grid-column: center-start / center-end;
@@ -99,6 +105,9 @@ section {
     height: 5rem;
     font-size: 2rem; }
 
+img {
+  width: 100%; }
+
 .bilocale {
   grid-column: center-start / center-end; }
 
@@ -106,13 +115,19 @@ section {
   grid-column: center-start / center-end; }
 
 .information__terms {
+  color: white;
+  font-size: 2rem;
   background-color: #54483A;
   grid-column: center-start / col-end 4; }
 
 .information__map {
+  color: white;
+  font-size: 2rem;
   background-color: #B28451;
   grid-column: col-start 5/center-end; }
 
 .footer {
   background-color: #6D5D4B;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  color: white;
+  font-size: 2rem; }
