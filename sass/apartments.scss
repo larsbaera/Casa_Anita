@@ -3,7 +3,17 @@
     grid-column: center-start / center-end;
     height:80rem;
 }
+.bilocale{
+    // background-color: $color-grey-dark-1;
+    grid-column: center-start / center-end;
+    height: 80rem;
+}
+.trilocale{
+    // background-color: $color-grey-light-1;
+    grid-column: center-start / center-end;
+    height: 80rem;
 
+}
 .wrapper{
     display: grid;
     grid-template-columns: 1fr [center-start] repeat(8, [col-start] minmax(min-content, 13rem)[col-end]) [center-end] 1fr;
@@ -11,11 +21,6 @@
     grid-gap: 1rem;
 
 }
-// .apt1{
-//     margin: 1rem 0;
-//     background-color: red;   
-//     grid-column: center-start/col-end 4;
-// }
 
 .apt {
     &1{
@@ -30,7 +35,7 @@
             font-weight: bold;
         }
         &__img {
-            height: 71rem;
+            height: 61rem;
             background-color: purple;
         }
         &__body{
@@ -76,5 +81,43 @@
             font-size:2rem;
         }
     }
-}
+    &4{
+        grid-column: center-end / center-end;
+        // background-color: green;  
+        height:100%; 
+        text-align:center;   
+        &__title{
+            height:5rem;
+            font-size:3rem;
+            font-weight: bold;
+        }
+        &__img {
+            height: 30rem;
+            background-color: purple;
+        }
+        &__body{
+            height:5rem;
+            font-size:2rem;
+        }
+    }
 
+    &5{
+        grid-column: col-start 5 / center-end;
+        // background-color: green;  
+        height:100%; 
+        text-align:center;   
+        &__title{
+            height:5rem;
+            font-size:3rem;
+            font-weight: bold;
+        }
+        &__img {
+            height: 30rem;
+            background-color: purple;
+        }
+        &__body{
+            height:5rem;
+            font-size: 2rem;
+        }
+}
+}

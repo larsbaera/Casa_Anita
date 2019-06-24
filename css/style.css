@@ -53,6 +53,14 @@ section {
   grid-column: center-start / center-end;
   height: 80rem; }
 
+.bilocale {
+  grid-column: center-start / center-end;
+  height: 80rem; }
+
+.trilocale {
+  grid-column: center-start / center-end;
+  height: 80rem; }
+
 .wrapper {
   display: grid;
   grid-template-columns: 1fr [center-start] repeat(8, [col-start] minmax(min-content, 13rem) [col-end]) [center-end] 1fr;
@@ -69,7 +77,7 @@ section {
     font-size: 3rem;
     font-weight: bold; }
   .apt1__img {
-    height: 71rem;
+    height: 61rem;
     background-color: purple; }
   .apt1__body {
     height: 5rem;
@@ -105,26 +113,49 @@ section {
     height: 5rem;
     font-size: 2rem; }
 
-img {
-  width: 100%; }
+.apt4 {
+  grid-column: center-end / center-end;
+  height: 100%;
+  text-align: center; }
+  .apt4__title {
+    height: 5rem;
+    font-size: 3rem;
+    font-weight: bold; }
+  .apt4__img {
+    height: 30rem;
+    background-color: purple; }
+  .apt4__body {
+    height: 5rem;
+    font-size: 2rem; }
 
-.bilocale {
-  grid-column: center-start / center-end; }
-
-.trilocale {
-  grid-column: center-start / center-end; }
+.apt5 {
+  grid-column: col-start 5 / center-end;
+  height: 100%;
+  text-align: center; }
+  .apt5__title {
+    height: 5rem;
+    font-size: 3rem;
+    font-weight: bold; }
+  .apt5__img {
+    height: 30rem;
+    background-color: purple; }
+  .apt5__body {
+    height: 5rem;
+    font-size: 2rem; }
 
 .information__terms {
   color: white;
   font-size: 2rem;
   background-color: #54483A;
-  grid-column: center-start / col-end 4; }
+  grid-column: center-start / center-end;
+  padding: 10rem 0; }
 
 .information__map {
   color: white;
   font-size: 2rem;
   background-color: #B28451;
-  grid-column: col-start 5/center-end; }
+  grid-column: center-start /center-end;
+  padding: 10rem 0; }
 
 .footer {
   background-color: #6D5D4B;
