@@ -14,28 +14,56 @@
     height: 80rem;
 
 }
-.wrapper{
+.grid{
+    grid-column : center-start/center-end;
     display: grid;
-    grid-template-columns: 1fr [center-start] repeat(8, [col-start] minmax(min-content, 13rem)[col-end]) [center-end] 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 1rem;
+    grid-template-columns: repeat(12, minmax(min-content, 10rem));
+    grid-template-rows: 10rem 1fr 1fr 25rem 50rem 20rem 50rem 10rem;
+    grid-gap: 0.5rem;
+    margin-top:5rem;
 
 }
 
 .apt {
+    
+    &-header1{
+        grid-column: 6 / span 2;
+        grid-row: 1;
+        text-align: center;
+    }
+    &-header1 h1,
+    &-header2 h1,
+    &-header3 h1{
+    font-size:5rem;
+    }
+    &-header2{
+        row-gap: 5rem;
+        grid-column: 6 / span 2;
+        grid-row: 4;
+        text-align: center;
+        
+    
+    }
+    &-header3{
+        grid-column: 6 / span 2;
+        grid-row: 6;
+        text-align: center;
+       
+    }
     &1{
         // background-color: red;   
-        grid-column: center-start / col-end 4;
-        grid-row: span 2; 
-        height: 81rem;
+        grid-column: 1/ span 5;
+        grid-row: 2 / span 2; 
+        // height: 81rem;
         text-align:center;   
+        
         &__title{
             height:5rem;
             font-size:3rem;
             font-weight: bold;
         }
         &__img {
-            height: 61rem;
+            height: 60.5rem;
             background-color: purple;
         }
         &__body{
@@ -44,7 +72,8 @@
         }
     }
     &2{
-        grid-column: col-start 5 / center-end;
+        grid-column: 6/span 7;
+        grid-row: 2;
         // background-color: blue;
         height:40rem;
         text-align:center;   
@@ -63,7 +92,8 @@
         }
     }
     &3{
-        grid-column: col-start 5 / center-end;
+        grid-column: 6 / span 7;
+        grid-row: 3;
         // background-color: green;  
         height:40rem; 
         text-align:center;   
@@ -82,7 +112,8 @@
         }
     }
     &4{
-        grid-column: center-end / center-end;
+        grid-column: 1 / span 5;
+        grid-row: 5;
         // background-color: green;  
         height:100%; 
         text-align:center;   
@@ -92,7 +123,7 @@
             font-weight: bold;
         }
         &__img {
-            height: 30rem;
+            height: 50rem;
             background-color: purple;
         }
         &__body{
@@ -102,8 +133,8 @@
     }
 
     &5{
-        grid-column: col-start 5 / center-end;
-        // background-color: green;  
+        grid-column: 6 / span 7;
+        grid-row: 5;
         height:100%; 
         text-align:center;   
         &__title{
@@ -112,12 +143,51 @@
             font-weight: bold;
         }
         &__img {
-            height: 30rem;
+            height: 50rem;
             background-color: purple;
         }
         &__body{
             height:5rem;
             font-size: 2rem;
         }
+}
+&6{
+    grid-column: 1 / span 7;
+    grid-row: 7;
+    height:100%; 
+    text-align:center;   
+    &__title{
+        height:5rem;
+        font-size:3rem;
+        font-weight: bold;
+    }
+    &__img {
+        height: 50rem;
+        background-color: purple;
+    }
+    &__body{
+        height:5rem;
+        font-size: 2rem;
+    }
+}
+
+&7{
+    grid-column: 8 / span 5;
+    grid-row: 7;
+    height:100%; 
+    text-align:center;   
+    &__title{
+        height:5rem;
+        font-size:3rem;
+        font-weight: bold;
+    }
+    &__img {
+        height: 50rem;
+        background-color: purple;
+    }
+    &__body{
+        height:5rem;
+        font-size: 2rem;
+    }
 }
 }

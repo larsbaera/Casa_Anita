@@ -27,11 +27,15 @@
         </div>
     </header>
 
-    <div class="wrapper monolocale">
+    <div class="grid">
+
+        <div class="apt-header1">
+            <h1>Monolocale</h1>
+        </div>
         <div class="apt1">
             <div class="apt1__title">Apartment 1</div>
-            <div class="apt1__img">Image</div>
             <div class="apt1__body">Body text goes here</div>
+            <div class="apt1__img">Image</div>
         </div>
         <div class="apt2">
             <div class="apt2__title">Apartment 2</div>
@@ -44,22 +48,39 @@
             <div class="apt3__body">Body text goes here</div>
         </div>
 
-    </div>
-
-    <div class="wrapper bilocale">
+        <div class="apt-header2">
+            <h1>Bilocale</h1>
+        </div>
         <div class="apt4">
+            <div class="apt4__img">Image</div>
             <div class="apt4__title">Apartment 4</div>
             <div class="apt4__body">Body text goes here</div>
-            <div class="apt4__img">Image</div>
         </div>
         <div class="apt5">
-                <div class="apt5__title">Apartment 5</div>
-                <div class="apt5__body">Body text goes here</div>
-                <div class="apt5__img">Image</div>
+            <div class="apt5__img">Image</div>
+            <div class="apt5__title">Apartment 5</div>
+            <div class="apt5__body">Body text goes here</div>
+        </div>
+        <div class="apt-header3">
+            <h1>Trilocale</h1>
+        </div>
+        <div class="apt6">
+            <div class="apt6__img">Image</div>
+            <div class="apt6__title">Apartment 6</div>
+            <div class="apt6__body">Body text goes here</div>
+        </div>
+        <div class="apt7">
+            <div class="apt7__img">Image</div>
+            <div class="apt7__title">Apartment 7</div>
+            <div class="apt7__body">Body text goes here</div>
         </div>
     </div>
 
-    <div class="wrapper trilocale">
+    <!-- <div class="bilocale">
+        
+    </div>
+
+    <div class="trilocale">
             <div class="apt4">
                 <div class="apt4__title">Apartment 4</div>
                 <div class="apt4__body">Body text goes here</div>
@@ -70,7 +91,7 @@
                     <div class="apt5__body">Body text goes here</div>
                     <div class="apt5__img">Image</div>
             </div>
-        </div>
+        </div> -->
 
     <!-- <section class="wrapper trilocale">
         <div class="flatMonolocale">
@@ -99,10 +120,65 @@
             </div>
         </div>
     </section> -->
-    <div class="information__terms"> <h2> Here will some general info show up.</h2>
-    </h2> </div>
-    <div class="information__map"><h2>This will be a map showing our location in Livigno</h2></div>
-    <footer class="footer"><h2>Footer goes here</h2></section>
+    <div class="information__terms">
+        <div class="information__content">
+        <h2>Information</h2>
+        <p>Affordable accomadation close to the mountain side, with close proximity Carosello 3000, supermarkets, shopping the countryside. All rooms feature a satellite flat-screen tv, private bathroom, fully equipped kitchens. Some feature seating area and/or a balcony.</p>
+        <p>Popular with couples and families as we can accomodate a variety of groups.</p>
+
+        <div class="facilities">
+        <h2>We Offer:</h2>
+        <ul>
+            <li>Free WiFi</li>
+            <li>Non-smoking rooms</li>
+            <li>Pets allowed</li>
+            <li>Free Parking</li>
+            <li>Fully equipped Kitchens</li>
+            <li>Private Bathrooms</li>
+            <li>We speak many languages</li>
+            <li>Storage room for skies and bicycles</li>
+        </ul>
+    </div>
+</div>
+</div>
+
+
+    <div class="information__map">
+            <h2 class="">Here We Are:</h2>
+                <div id="map">
+                <script>
+                    function initMap() {
+                        var livigno = {
+                            lat: 46.5243623,
+                            lng: 10.1275247
+                        };
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            zoom: 20,
+                            center: livigno
+                        });
+                        var marker = new google.maps.Marker({
+                            position: livigno,
+                            map: map
+                        });
+                    }
+                </script>
+                <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnPQX1h8cS8NVHBTw7m2jmU8jfF0P1CE0&callback=initMap">
+                    </script>
+            </div>
+        </div>
+
+        <div class="contactForm">
+            Contactform goes here
+        </div>
+
+    <footer class="footer">
+        <div class="footer__content">
+        <h2>Casa Anita Livigno</h2>
+        <h3>Adress:</h3>
+        <p>Casa Anita, Via Borch 96, 23041 Livigno SO, Italia</p>
+    </div>
+    </footer>
 
 </body>
 

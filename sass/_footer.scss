@@ -2,7 +2,12 @@
     background-color: $color-grey-dark-2;
     grid-column: full-start / full-end;
     color:white;
-
+    margin-top:5rem;
     font-size:2rem;
+    text-align: center;
+
+    &__content{
+        margin:3rem 0 3rem 0;
+    }
 }
 
