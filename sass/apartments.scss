@@ -1,27 +1,17 @@
-.monolocale{
-    // background-color: $color-secondary;
-    grid-column: center-start / center-end;
-    height:80rem;
-}
-.bilocale{
-    // background-color: $color-grey-dark-1;
-    grid-column: center-start / center-end;
-    height: 80rem;
-}
-.trilocale{
-    // background-color: $color-grey-light-1;
-    grid-column: center-start / center-end;
-    height: 80rem;
-
-}
 .grid{
     grid-column : center-start/center-end;
     display: grid;
-    grid-template-columns: repeat(12, minmax(min-content, 10rem));
-    grid-template-rows: 10rem 1fr 1fr 25rem 50rem 20rem 50rem 10rem;
+    grid-template-columns: repeat(12, minmax(min-content, 1fr));
     grid-gap: 0.5rem;
+    grid-template-rows: 10rem 1fr 1fr 25rem 50rem 20rem 50rem 10rem;
     margin-top:5rem;
 
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    background-image: cover;
 }
 
 .apt {
@@ -54,7 +44,6 @@
         // background-color: red;   
         grid-column: 1/ span 5;
         grid-row: 2 / span 2; 
-        // height: 81rem;
         text-align:center;   
         
         &__title{
@@ -63,8 +52,10 @@
             font-weight: bold;
         }
         &__img {
-            height: 60.5rem;
-            background-color: purple;
+            // background-image: url(/img/FOTO_APT_2019/BILO2PAX-KITCHEN.jpg);
+            background-image: url(//fillmurray.com/300/300);
+            height:80rem;
+            background-position: center; 
         }
         &__body{
             height:5rem;
@@ -75,7 +66,7 @@
         grid-column: 6/span 7;
         grid-row: 2;
         // background-color: blue;
-        height:40rem;
+        // height:40rem;
         text-align:center;   
         &__title{
             height:5rem;
@@ -83,8 +74,9 @@
             font-weight: bold;
         }
         &__img {
-            height: 30rem;
-            background-color: purple;
+            background-image: url();
+            width:70rem;
+            height:40rem;
         }
         &__body{
             height:5rem;
@@ -95,7 +87,7 @@
         grid-column: 6 / span 7;
         grid-row: 3;
         // background-color: green;  
-        height:40rem; 
+        // height:40rem; 
         text-align:center;   
         &__title{
             height:5rem;
@@ -103,8 +95,9 @@
             font-weight: bold;
         }
         &__img {
-            height: 30rem;
-            background-color: purple;
+            background-image: url();
+            width:85rem;
+            height:40rem;
         }
         &__body{
             height:5rem;

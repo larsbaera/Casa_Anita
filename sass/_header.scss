@@ -1,4 +1,5 @@
 .header{
+    position: relative;
     margin: 2rem;
     // background-image: url(/img/header-img.jpg);
     background-color: cornflowerblue;
@@ -9,6 +10,7 @@
     grid-column: full-start / full-end;
 }
 .title{
+    
     // background-color: darkblue;
     color:white;
     text-align: center;
@@ -16,20 +18,38 @@
     width:max-content;
 }
 .headerTitle{
+    position: absolute;
+    left: 5rem;
+    top: 5rem;
+    font-family: 'Allura', cursive;
     font-size: 9rem;
     font-weight: bold;
+    z-index: 2;
 }
 
 .headerParagraph{
-    font-size:3rem;
+    font-size:8rem;
     margin:4rem;
 }
-
+.paragraph{
+    font-size:5rem;
+}
+.paragraph,
+.headerParagraph{
+    font-family: nunito;
+}
 .readMore{
 font-size: inherit;
 }
 
-.btn{
-font-size:4rem;
+.buttons{
+left: 50%;
+transform: translate(-50%);
+position: absolute;
+bottom:2rem;
+}
+.btn{ 
+    font-size:4rem;
+    margin: 3rem;
     
 }

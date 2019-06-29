@@ -18,7 +18,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-rows: 100vh repeat(5, min-content);
-  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] 1fr [full-end]; }
+  grid-template-columns: [full-start] 1fr [center-start] repeat(12, [col-start] minmax(min-content, 10rem) [col-end]) [center-end] 1fr [full-end]; }
 
 section {
   margin: 10rem 0;
@@ -26,6 +26,7 @@ section {
   text-align: center; }
 
 .header {
+  position: relative;
   margin: 2rem;
   background-color: cornflowerblue;
   background-size: cover;
@@ -38,38 +39,50 @@ section {
   width: max-content; }
 
 .headerTitle {
+  position: absolute;
+  left: 5rem;
+  top: 5rem;
+  font-family: 'Allura', cursive;
   font-size: 9rem;
-  font-weight: bold; }
+  font-weight: bold;
+  z-index: 2; }
 
 .headerParagraph {
-  font-size: 3rem;
+  font-size: 8rem;
   margin: 4rem; }
+
+.paragraph {
+  font-size: 5rem; }
+
+.paragraph,
+.headerParagraph {
+  font-family: nunito; }
 
 .readMore {
   font-size: inherit; }
 
+.buttons {
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  bottom: 2rem; }
+
 .btn {
-  font-size: 4rem; }
-
-.monolocale {
-  grid-column: center-start / center-end;
-  height: 80rem; }
-
-.bilocale {
-  grid-column: center-start / center-end;
-  height: 80rem; }
-
-.trilocale {
-  grid-column: center-start / center-end;
-  height: 80rem; }
+  font-size: 4rem;
+  margin: 3rem; }
 
 .grid {
   grid-column: center-start/center-end;
   display: grid;
-  grid-template-columns: repeat(12, minmax(min-content, 10rem));
-  grid-template-rows: 10rem 1fr 1fr 25rem 50rem 20rem 50rem 10rem;
+  grid-template-columns: repeat(12, minmax(min-content, 1fr));
   grid-gap: 0.5rem;
+  grid-template-rows: 10rem 1fr 1fr 25rem 50rem 20rem 50rem 10rem;
   margin-top: 5rem; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  background-image: cover; }
 
 .apt-header1 {
   grid-column: 6 / span 2;
@@ -101,8 +114,9 @@ section {
     font-size: 3rem;
     font-weight: bold; }
   .apt1__img {
-    height: 60.5rem;
-    background-color: purple; }
+    background-image: url(//fillmurray.com/300/300);
+    height: 80rem;
+    background-position: center; }
   .apt1__body {
     height: 5rem;
     font-size: 2rem; }
@@ -110,15 +124,15 @@ section {
 .apt2 {
   grid-column: 6/span 7;
   grid-row: 2;
-  height: 40rem;
   text-align: center; }
   .apt2__title {
     height: 5rem;
     font-size: 3rem;
     font-weight: bold; }
   .apt2__img {
-    height: 30rem;
-    background-color: purple; }
+    background-image: url();
+    width: 70rem;
+    height: 40rem; }
   .apt2__body {
     height: 5rem;
     font-size: 2rem; }
@@ -126,15 +140,15 @@ section {
 .apt3 {
   grid-column: 6 / span 7;
   grid-row: 3;
-  height: 40rem;
   text-align: center; }
   .apt3__title {
     height: 5rem;
     font-size: 3rem;
     font-weight: bold; }
   .apt3__img {
-    height: 30rem;
-    background-color: purple; }
+    background-image: url();
+    width: 85rem;
+    height: 40rem; }
   .apt3__body {
     height: 5rem;
     font-size: 2rem; }
@@ -203,14 +217,22 @@ section {
     height: 5rem;
     font-size: 2rem; }
 
+.infoGrid {
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: 1fr 43rem;
+  grid-template-rows: 1fr 1fr; }
+
 .information__terms {
+  grid-column: 1/1;
+  grid-row: 1/1;
   color: darkgrey;
   font-size: 2rem;
-  grid-column: center-start / center-end;
-  padding: 10rem 0; }
+  grid-column: center-start / center-end; }
 
 .information__content {
-  padding: 2rem; }
+  width: 70rem;
+  font-size: 2rem; }
 
 .information__map {
   text-align: center;
@@ -229,8 +251,53 @@ section {
   -moz-box-shadow: 0px 0px 18px 6px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 18px 6px rgba(0, 0, 0, 0.5); }
 
+.frame {
+  grid-column: 2;
+  grid-row: 1 / span 2; }
+  .frame__img {
+    background-image: url(/img/109154269.jpg);
+    height: 76rem;
+    background-position: center; }
+
 .facilities {
-  padding: 5rem 5rem; }
+  grid-column: 1;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(min-content, 21rem));
+  grid-template-rows: 5rem 1fr 1fr;
+  font-size: 1.7rem;
+  text-align: center; }
+
+.facility__header {
+  grid-column: 2;
+  grid-row: 1; }
+
+.facility__header h2 {
+  font-size: 3rem; }
+
+.facility__item1 {
+  grid-column: 1;
+  grid-row: 2; }
+
+.facility__item2 {
+  grid-column: 2;
+  grid-row: 2; }
+
+.facility__item3 {
+  grid-column: 3;
+  grid-row: 2; }
+
+.facility__item4 {
+  grid-column: 1;
+  grid-row: 3; }
+
+.facility__item5 {
+  grid-column: 2;
+  grid-row: 3; }
+
+.facility__item6 {
+  grid-column: 3;
+  grid-row: 3; }
 
 .facilities h2 {
   margin-bottom: 2rem;
@@ -250,4 +317,4 @@ section {
   font-size: 2rem;
   text-align: center; }
   .footer__content {
-    margin: 3rem 0 3rem 0; }
+    margin: 10rem 0 3rem 0; }
