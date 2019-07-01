@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: inherit; }
 
+body, html {
+  height: 100%; }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
@@ -17,8 +20,8 @@ body {
 .bodyLayout {
   width: 100%;
   display: grid;
-  grid-template-rows: 100vh repeat(5, min-content);
-  grid-template-columns: [full-start] 1fr [center-start] repeat(12, [col-start] minmax(min-content, 10rem) [col-end]) [center-end] 1fr [full-end]; }
+  grid-template-rows: min-content repeat(5, min-content);
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 10rem) [col-end]) [center-end] 1fr [full-end]; }
 
 section {
   margin: 10rem 0;
@@ -27,45 +30,54 @@ section {
 
 .header {
   position: relative;
-  margin: 2rem;
-  background-color: cornflowerblue;
   background-size: cover;
-  grid-column: full-start / full-end; }
+  height: fit-content;
+  margin-bottom: 0rem;
+  grid-column: full-start / full-end;
+  z-index: 1; }
+
+.parallax {
+  background-image: url(/img/header-img.jpg);
+  opacity: .4;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .title {
-  color: white;
+  position: absolute;
+  top: 20rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
   text-align: center;
-  margin: 25rem auto;
-  width: max-content; }
+  width: max-content;
+  z-index: 1; }
 
 .headerTitle {
   position: absolute;
-  left: 5rem;
-  top: 5rem;
+  left: 4rem;
+  top: 4rem;
   font-family: 'Allura', cursive;
-  font-size: 9rem;
+  font-size: 8rem;
   font-weight: bold;
-  z-index: 2; }
+  z-index: 2;
+  color: sandybrown; }
 
 .headerParagraph {
-  font-size: 8rem;
-  margin: 4rem; }
+  font-size: 6rem;
+  margin: 1rem; }
 
 .paragraph {
-  font-size: 5rem; }
+  font-size: 3rem; }
 
 .paragraph,
 .headerParagraph {
   font-family: nunito; }
 
-.readMore {
-  font-size: inherit; }
-
 .buttons {
-  left: 50%;
-  transform: translate(-50%);
-  position: absolute;
-  bottom: 2rem; }
+  margin-top: 5rem; }
 
 .btn {
   font-size: 4rem;
@@ -76,7 +88,7 @@ section {
   display: grid;
   grid-template-columns: repeat(12, minmax(min-content, 1fr));
   grid-gap: 0.5rem;
-  grid-template-rows: 10rem 1fr 1fr 25rem 50rem 20rem 50rem 10rem;
+  grid-template-rows: 10rem 1fr 1fr min-content 50rem min-content 50rem;
   margin-top: 5rem; }
 
 img {
@@ -98,12 +110,14 @@ img {
   row-gap: 5rem;
   grid-column: 6 / span 2;
   grid-row: 4;
-  text-align: center; }
+  text-align: center;
+  margin: 15rem auto 5rem; }
 
 .apt-header3 {
   grid-column: 6 / span 2;
   grid-row: 6;
-  text-align: center; }
+  text-align: center;
+  margin: 15rem auto 5rem; }
 
 .apt1 {
   grid-column: 1/ span 5;
@@ -114,8 +128,8 @@ img {
     font-size: 3rem;
     font-weight: bold; }
   .apt1__img {
-    background-image: url(//fillmurray.com/300/300);
-    height: 80rem;
+    background-image: url();
+    height: 80.5rem;
     background-position: center; }
   .apt1__body {
     height: 5rem;
@@ -154,7 +168,7 @@ img {
     font-size: 2rem; }
 
 .apt4 {
-  grid-column: 1 / span 5;
+  grid-column: 1 / span 6;
   grid-row: 5;
   height: 100%;
   text-align: center; }
@@ -170,7 +184,7 @@ img {
     font-size: 2rem; }
 
 .apt5 {
-  grid-column: 6 / span 7;
+  grid-column: 7 / span 6;
   grid-row: 5;
   height: 100%;
   text-align: center; }
@@ -186,7 +200,7 @@ img {
     font-size: 2rem; }
 
 .apt6 {
-  grid-column: 1 / span 7;
+  grid-column: 1 / span 6;
   grid-row: 7;
   height: 100%;
   text-align: center; }
@@ -202,7 +216,7 @@ img {
     font-size: 2rem; }
 
 .apt7 {
-  grid-column: 8 / span 5;
+  grid-column: 7 / span 6;
   grid-row: 7;
   height: 100%;
   text-align: center; }
@@ -238,7 +252,7 @@ img {
   text-align: center;
   font-size: 3rem;
   grid-column: center-start /center-end;
-  margin-bottom: 10rem; }
+  margin: 10rem 0 10rem 0; }
 
 .information__map h2 {
   font-size: 4rem;
@@ -246,7 +260,7 @@ img {
 
 .information__map #map {
   max-width: 100%;
-  height: 50rem;
+  height: 65rem;
   -webkit-box-shadow: 0px 0px 18px 6px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 0px 18px 6px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 18px 6px rgba(0, 0, 0, 0.5); }
@@ -267,6 +281,9 @@ img {
   grid-template-rows: 5rem 1fr 1fr;
   font-size: 1.7rem;
   text-align: center; }
+
+.logo {
+  font-size: 3rem; }
 
 .facility__header {
   grid-column: 2;
