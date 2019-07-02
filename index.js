@@ -1,18 +1,22 @@
 const express = require("express");
 const app = express();
 const dotenv = require('dotenv').config();
-const port = 3000;
-const router = express.Router();
 const path = require('path');
-app.set('view engine', "html");
-app.use(express.static(__dirname + '/'));
-
-app.use('/', router);
+const port = 3000;
+app.set('port', (process.env.PORT || 3000))
+app.use(express.static(__dirname + '/public'));
+app.set('views', __dirname + '/public/views');
 
 app.get('/', function(req,res) { 
-    res.render('index')});
-
-    app.get('/apt1', function(req,res){
-        res.send("here is apt 1..")
+        res.sendFile('index.html',{root : __dirname + '/public/views/'});
+});
+    app.get('/monolocale', function(req,res){
+        res.sendFile('monolocale.html',{root : __dirname + '/public/views/'});
+    });
+    app.get('/bilocale', function(req,res){
+        res.sendFile('bilocale.html',{root : __dirname + '/public/views/'});
+    });
+    app.get('/trilocale', function(req,res){
+        res.sendFile('trilocale.html',{root : __dirname + '/public/views/'});
     });
 app.listen(port, ()=> console.log('Listening on port 3000'));
