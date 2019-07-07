@@ -4,8 +4,8 @@ const dotenv = require('dotenv').config();
 const path = require('path');
 const port = 3000;
 app.set('port', (process.env.PORT || 3000))
-app.use(express.static(__dirname + '/public'));
-app.set('views', __dirname + '/public/views');
+// app.use(express.static(__dirname + '/public'));
+// app.set('views', __dirname + '/public/views');
 
 app.get('/', function(req,res) { 
         res.sendFile('index.html',{root : __dirname + '/public/views/'});
