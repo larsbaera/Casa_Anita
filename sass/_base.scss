@@ -37,10 +37,11 @@ body{
 
 
 .bodyLayout{
-    width: 100%;
-    display: grid;
-    grid-template-rows: min-content repeat( 5, min-content);
-    grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] 1fr [full-end];
+    width: 75vw;
+    margin: 0 auto;
+    // display: grid;
+    // grid-template-rows: min-content repeat( 5, min-content);
+    // grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] 1fr [full-end];
 }
 
 section{

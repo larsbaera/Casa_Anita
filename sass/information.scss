@@ -1,9 +1,7 @@
-.infoGrid{
-    // grid-column: col-start 2/col-start 7;
-    grid-column: center-start / center-end;
+.infoGrid{  
     display: grid;
-    grid-template-columns: 1fr 43rem;;
-    grid-template-rows: 1fr 1fr;   
+    grid-template-columns: 2fr 1fr;
+ 
 }
 
 .information{
@@ -11,14 +9,14 @@
     &__terms{
         grid-column: 1/1;
         grid-row:1/1;
-        font-size:2rem;
+        font-size:2.5rem;
         // background-color: #54483A;
-        grid-column: center-start / center-end;
+       
     }
 
     &__content{
         width:70rem;
-        font-size:2rem;
+        font-size:2.5rem;
     }
     &__map{
         // color:white;
@@ -27,8 +25,10 @@
         // background-color:#B28451;
         grid-column: center-start /center-end;
         margin: 10rem 0 10rem 0;
-        
-       
+    }
+
+    &__header{
+        font-size:3.5rem;
     }
     &__map h2{
         font-size:4rem;
@@ -44,19 +44,12 @@
         box-shadow: 0px 0px 18px 6px rgba(0,0,0,0.5);
     } 
     
-}
-
-.frame{
-    grid-column: 2;
-    grid-row: 1 / span 2;
     
-    &__img{
-        background-image: url(/img/109154269.jpg);
-        height:76rem;
-        
-        background-position: center;
-
-    }
+        &__img{
+            background-image: url(/img/exterior/109154269.jpg);
+            height: 60rem;
+            // background-position:top<;
+        }    
 }
 
 .facilities{
@@ -65,8 +58,9 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(min-content, 21rem));
     grid-template-rows: 5rem 1fr 1fr;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     text-align: center;
+    padding-top:10rem;
 }
 
 .logo{
@@ -75,40 +69,40 @@
 .facility{
 
     &__header{
-    grid-column: 2;
-    grid-row:1;
+        grid-column: 2;
+        grid-row:1;
+            & h2 {
+                font-size: 3rem;
+            }
+    }
    
-    }
-    &__header h2 {
-        font-size: 3rem;
-    }
     &__item1{
-    grid-column: 1;
-    grid-row:2;
+        grid-column: 1;
+        grid-row:2;
     }
     &__item2{
         grid-column: 2;
-    grid-row:2;
+        grid-row:2;
     }
     &__item3{
         grid-column: 3;
-    grid-row:2;
+        grid-row:2;
     }
     &__item4{
         grid-column: 1;
-    grid-row:3;
+        grid-row:3;
     }
     &__item5{
         grid-column: 2;
-    grid-row:3;
+        grid-row:3;
     }
     &__item6{
         grid-column: 3;
-    grid-row:3;
+        grid-row:3;
     }
 }
 
 .facilities h2{
-    margin-bottom: 2rem;
+    margin-bottom: 2.3rem;
     font-weight: bold;
 }
