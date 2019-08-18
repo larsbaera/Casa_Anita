@@ -1,13 +1,22 @@
 .footer{
     background-color: $color-grey-dark-2;
-    grid-column: full-start / full-end;
     color:white;
     margin-top:5rem;
     font-size:2rem;
     text-align: center;
 
     &__content{
-        margin:10rem 0 3rem 0;
+        padding: 3rem;
+    }
+    &__logo{
+        font-family: 'Allura', cursive;
+        font-size:7rem;
+        font-weight: bold;
+        color: sandybrown;
+    }
+    &__adress{
+        font-weight: bold;
+        font-size: 2rem;
     }
 }
 

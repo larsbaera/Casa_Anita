@@ -33,18 +33,19 @@ body{
     color: $color-grey-dark-2;
     font-weight: 300;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 
 .bodyLayout{
-    width: 75vw;
-    margin: 0 auto;
+    width: 80vw;
+    margin: 30rem auto 0; 
     // display: grid;
     // grid-template-rows: min-content repeat( 5, min-content);
     // grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] 1fr [full-end];
 }
 
-section{
+section {
     margin: 10rem 0;
     font-size: 1.5rem;
     text-align: center;

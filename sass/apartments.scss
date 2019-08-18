@@ -3,9 +3,9 @@
     grid-template-columns: repeat(4, minmax(200px, 1fr));
     grid-gap: 2rem;
     margin-top:5rem;
-    justify-content: center;
-    // grid-template-rows: 1fr;
-    // align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    
 
     @media (max-width:100rem){
         grid-template-columns: repeat(3, minmax(300px, 1fr));
@@ -18,6 +18,38 @@
     } 
 }
 
+.room__details{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: center;
+    margin: 0;
+    list-style: none;
+    &__item{
+        flex:1;
+    }
+}
+.Link{
+    display:block;
+}
+
+.apartments{
+    margin-top: 10rem;
+}
+
+.card{
+    &-action{
+        font-size: 2.5rem;
+    }
+    &-title{
+        // top:0;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    &-content{
+        height: 27rem;
+    }
+}
 
 img{
     max-width: 100%;
@@ -27,23 +59,24 @@ img{
 
 .apt {
     
-    &-header1{
+    &-header{
         text-align: center;
         margin: 0 auto;
-        font-size:5rem;
+    & h1{
+        font-size: 7rem; 
     }
-   
+    }
+
+
     &1{ 
         text-align:center; 
-        display: inline-block;  
          
         &__title{
             min-height: fit-content;
-            font-size:3rem;
+            font-size:6rem;
             font-weight: bold;
         }
         &__img {
-            // background-image: url(/img/FOTO_APT_2019/BILO2PAX-KITCHEN.jpg);
             width:100%;
             background-position: center; 
         }
@@ -83,7 +116,7 @@ img{
         }
     }
     &4{
-        height:100%; 
+
         text-align:center;   
         &__title{
             min-height: fit-content;
@@ -101,7 +134,7 @@ img{
     }
 
     &5{
-        height:100%; 
+
         text-align:center;   
         &__title{
             min-height: fit-content;
@@ -118,7 +151,6 @@ img{
         }
 }
 &6{
-    height:100%; 
     text-align:center;   
     &__title{
         min-height: fit-content;
@@ -136,7 +168,6 @@ img{
 }
 
 &7{
-    height:100%; 
     text-align:center;   
     &__title{
         min-height: fit-content;
