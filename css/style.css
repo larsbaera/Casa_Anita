@@ -18,9 +18,24 @@ body {
   line-height: 1.6;
   overflow-x: hidden; }
 
-.bodyLayout {
-  width: 80vw;
+.section__apartments, .section__information, .section__gallery, .section__map {
+  width: 90vw;
   margin: 30rem auto 0; }
+
+.section__apartments {
+  width: 90vw;
+  margin: 30rem auto 0; }
+
+.section__information {
+  width: 90vw; }
+
+.section__gallery {
+  width: 70rem; }
+
+main {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
 
 section {
   margin: 10rem 0;
@@ -32,12 +47,11 @@ section {
   margin-bottom: 15rem; }
 
 .parallax {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.5)), url("/img/Exterior/header-img.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.2)), url("/img/20170708_164010 (Stor).jpg");
+  background-position: center;
+  background-size: cover;
   height: 85vh;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%); }
-
-.parallax::after {
-  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url("images/background.jpg"); }
 
 .button {
   background-color: transparent;
@@ -85,28 +99,37 @@ hr {
   left: 4rem;
   top: 1rem;
   font-family: 'Allura', cursive;
-  font-size: 6rem;
+  font-size: 11rem;
   font-weight: bold;
   z-index: 2;
-  color: sandybrown; }
+  color: white; }
 
 .headerParagraph {
-  font-size: 6rem;
+  font-size: 8rem;
   margin: 1rem; }
 
 .paragraph {
-  font-size: 3rem; }
+  font-size: 4rem; }
 
 .paragraph,
 .headerParagraph {
+  color: white;
   font-family: nunito; }
 
 .buttons {
   margin-top: 5rem; }
 
 .btn {
-  font-size: 4rem;
+  font-size: 5rem;
   margin: 3rem; }
+
+.lgSelect {
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem; }
+  .lgSelect a {
+    color: white; }
 
 .grid {
   display: grid;
@@ -139,7 +162,7 @@ hr {
   display: block; }
 
 .apartments {
-  margin-top: 10rem; }
+  margin-top: 40rem; }
 
 .card-action {
   font-size: 2.5rem; }
@@ -338,12 +361,6 @@ img {
 
 #Copyright {
   font-size: 1rem; }
-
-.contactForm {
-  grid-column: center-start/center-end;
-  text-align: center;
-  font-size: 3rem;
-  margin: 0 3rem; }
 
 .footer {
   background-color: #6D5D4B;

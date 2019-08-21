@@ -5,7 +5,10 @@
 }
 .parallax{
     
-    background-image: linear-gradient(to bottom,rgba(255,255,255,.6),rgba(0,0,0,.5)), url('/img/Exterior/header-img.jpg');
+    background-image: linear-gradient(to right,rgba(0,0,0,.3),rgba(255,255,255,.2)), url('/img/20170708_164010\ \(Stor\).jpg');
+    // background-image: url('/img/20170708_164010\ \(Stor\).jpg');    
+    background-position: center;
+    background-size: cover;
     height: 85vh;
 
     clip-path: polygon(
@@ -14,29 +17,6 @@
     100% calc(100% - 5vw),
     0 100%,
   );
-    // top: 0;
-    // bottom: 0;
-    // right: 0;
-    // left: 0;
-    // height: 1005;
-    // width: 100%;
-    // transform: skew(-26deg);
-    // transform-origin: ;
-
-
-
-    // background-color: rgb(#ffffff);
-    // opacity: .4;
-    // background-attachment: fixed;
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-}
-
-.parallax::after{
-    background-image:
-        linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
-        url('images/background.jpg');
 }
 
 .button{
@@ -51,7 +31,6 @@
     font-size: 4rem;
     position: absolute;
     left: 50%;
-    // bottom: -10rem;
     transform: translateX(-50%);
     
 }
@@ -90,23 +69,24 @@ hr{
     left: 4rem;
     top: 1rem;
     font-family: 'Allura', cursive;
-    font-size: 6rem;
+    font-size: 11rem;
     font-weight: bold;
     z-index: 2;
-    color:sandybrown;
+    color:white;
 }
 
 .headerParagraph{
-    font-size:6rem;
+    font-size:8rem;
     margin:1rem;
    
 }
 .paragraph{
-    font-size:3rem;
+    font-size:4rem;
    
 }
 .paragraph,
 .headerParagraph{
+    color:white;
     font-family: nunito;
 }
 
@@ -115,39 +95,16 @@ margin-top:5rem;
 
 }
 .btn{ 
-    font-size:4rem;
+    font-size:5rem;
     margin: 3rem;
     
 }
 
-// .pageOption{
-//     overflow: hidden;
-//     position: relative;
-//     width: 80rem;
-//     height: 54rem;
-// }
+.lgSelect{
+    font-size: 2rem;
+    & a{color: white;}
 
-// .option, .option img {width:100%; height:100%;}
-// .option {
-//     overflow: hidden;
-//   position: absolute;  
-//   /* arctan(27 / 40) = 34.01935deg 
-//    * need to skew by 90deg - 34.01935deg = 55.98065deg
-//   */
-//   transform: skewX(-56deg);
-// }
-
-// .option:first-child {
-//     left: -.25em;
-//     transform-origin: 100% 0;
-//     border: solid black;
-//   }
-//   .option:last-child {
-//     right: -.25em;
-//     transform-origin: 0 100%;
-//     border: solid black;
-//   }
-//   .option img {
-//     transform: skewX(55.98deg);
-//     transform-origin: inherit;
-//   }
+    position: absolute;
+    top:1rem;
+    right: 1.5rem;
+}
