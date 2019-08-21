@@ -19,7 +19,7 @@ i18next
     lng: 'en',
     preload: ['en', 'no', 'it'],
     saveMissing: true,
-    debug: true,
+    // debug: true,
     backend: {
       loadPath: __dirname + '/locales/{{lng}}/{{ns}}.json',
       addPath: __dirname + '/locales/{{lng}}/{{ns}}.missing.json'
