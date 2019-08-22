@@ -17,6 +17,10 @@
     "node": "10.16"
   },
 
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/larsbaera/casa_anita" 
+  },
   "author": "Lars-Arne Bæra",
   "license": "ISC",
   "devDependencies": {

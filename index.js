@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
-const dotenv = require('dotenv').config();
-const path = require('path');
+// const dotenv = require('dotenv').config();
+// const path = require('path');
 const port = 3000;
 var i18next = require("i18next"); 
 var middleware=require("i18next-express-middleware");
