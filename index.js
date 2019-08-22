@@ -3,14 +3,14 @@ const app = express();
 // const dotenv = require('dotenv').config();
 // const path = require('path');
 const port = 3000;
-var i18next = require("i18next"); 
-var middleware=require("i18next-express-middleware");
-var FsBackend = require('i18next-node-fs-backend');
-var bodyParser = require('body-parser');
-var fs = require('fs');
+const i18next = require("i18next"); 
+const middleware=require("i18next-express-middleware");
+const FsBackend = require('i18next-node-fs-backend');
+const bodyParser = require('body-parser');
+const fs = require('fs');
 
 app.set('port', (process.env.PORT || 3000))
-app.use(express.static(__dirname + ''));
+app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/views');
 
 i18next
@@ -33,15 +33,11 @@ app.use(bodyParser.urlencoded({ extended: true }));  // for parsing application/
 app.use(middleware.handle(i18next, {}));
 
 app.post('/locales/add/:lng/:ns', middleware.missingKeyHandler(i18next));
-// app.post('/locales/add/:lng/:ns',function(req, res) {
-//   console.warn(req.query, req.body)
-// });
 
 app.use('/locales', express.static('locales'));
 
 
 app.get('/', function(req,res) {
-
         res.sendFile('index.html',{root : __dirname + '/views/'});
 });
     app.get('/monolocale', function(req,res){
@@ -50,4 +46,4 @@ app.get('/', function(req,res) {
 
     app.get("/locales/resources.json", middleware.getResourcesHandler(i18next));
     
-app.listen(port, ()=> console.log('Listening on port '+ port));
+app.listen(port, () => console.log('Listening on port '+ port));
