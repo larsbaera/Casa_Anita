@@ -46,4 +46,4 @@ app.get('/', function(req,res) {
 
     app.get("/locales/resources.json", middleware.getResourcesHandler(i18next));
     
-app.listen(port, () => console.log('Listening on port '+ port));
+app.listen(process.env.PORT || port);
