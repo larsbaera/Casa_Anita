@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 // const dotenv = require('dotenv').config();
-// const path = require('path');
+const path = require('path');
 const port = 3000;
 const i18next = require('i18next');
 const middleware = require('i18next-express-middleware');
@@ -9,12 +9,12 @@ const FsBackend = require('i18next-node-fs-backend');
 const bodyParser = require('body-parser');
 const fs = require('fs');
 
-var helmet = require('helmet');
-app.use(helmet());
+// var helmet = require('helmet');
+// app.use(helmet());
 
 app.set('port', process.env.PORT || 3000);
-app.use(express.static(__dirname, '/public'));
-app.set('views', __dirname, '/views');
+app.use(express.static(__dirname + '/public'));
+app.set('views', __dirname + '/views');
 
 i18next.use(FsBackend).init({
 	lng: 'en',

@@ -47,7 +47,7 @@ section {
   margin-bottom: 15rem; }
 
 .parallax {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.2)), url("/img/Livigno_Valley.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.2)), url("../img/Livigno_Valley.jpg");
   background-position: center;
   background-size: cover;
   height: 85vh;
