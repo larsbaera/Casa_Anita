@@ -25,17 +25,7 @@ body {
 
 .section__apartments, .section__information, .section__gallery, .section__map {
   width: 90vw;
-  margin: 30rem auto 0; }
-
-.section__apartments {
-  width: 90vw;
-  margin: 30rem auto 0; }
-
-.section__information {
-  width: 90vw; }
-
-.section__gallery {
-  width: 70rem; }
+  margin: 20rem auto 0; }
 
 main {
   padding: 0;
@@ -57,6 +47,10 @@ section {
   background-size: cover;
   height: 85vh;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%); }
+  @media (max-width: 50rem) {
+    .parallax {
+      height: 80vh;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
 
 .button {
   background-color: transparent;
@@ -71,6 +65,12 @@ section {
   position: absolute;
   left: 50%;
   transform: translateX(-50%); }
+  @media (max-width: 80rem) {
+    .button {
+      font-size: 3rem; } }
+  @media (max-width: 60rem) {
+    .button {
+      font-size: 2.5rem; } }
 
 .downArrow {
   border: solid;
@@ -79,6 +79,9 @@ section {
   padding: 2rem;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg); }
+  @media (max-width: 60rem) {
+    .downArrow {
+      padding: 1.5rem; } }
 
 hr {
   position: absolute;
@@ -98,6 +101,9 @@ hr {
   text-align: center;
   width: max-content;
   z-index: 1; }
+  @media (orientation: landscape) {
+    .title {
+      top: 12rem; } }
 
 .headerTitle {
   position: absolute;
@@ -107,35 +113,41 @@ hr {
   font-size: 9rem;
   font-weight: bold;
   z-index: 2;
-  color: white; }
+  color: white;
+  text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.5); }
   @media (max-width: 100rem) {
     .headerTitle {
       font-size: 8rem; } }
   @media (max-width: 80rem) {
     .headerTitle {
-      font-size: 6rem; } }
+      font-size: 6rem;
+      left: 2rem; } }
   @media (max-width: 60rem) {
     .headerTitle {
-      font-size: 4rem; } }
+      font-size: 4.5rem;
+      top: .5rem;
+      left: 1.5rem; } }
 
 .headerParagraph {
   font-size: 8rem;
-  margin: 1rem; }
+  margin: 1rem;
+  text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.5); }
   @media (max-width: 80rem) {
     .headerParagraph {
       font-size: 6rem; } }
   @media (max-width: 60rem) {
     .headerParagraph {
-      font-size: 4rem; } }
+      font-size: 4.5rem; } }
 
 .paragraph {
-  font-size: 4rem; }
+  font-size: 4rem;
+  text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.5); }
   @media (max-width: 80rem) {
     .paragraph {
-      font-size: 3rem; } }
+      font-size: 3.3rem; } }
   @media (max-width: 60rem) {
     .paragraph {
-      font-size: 2rem; } }
+      font-size: 2.3rem; } }
 
 .paragraph,
 .headerParagraph {
@@ -189,9 +201,21 @@ hr {
 
 .apartments {
   margin-top: 40rem; }
+  @media (max-width: 80rem) {
+    .apartments {
+      margin-top: 30rem; } }
+  @media (max-width: 60rem) {
+    .apartments {
+      margin-top: 20rem; } }
 
 .card-action {
   font-size: 2.5rem; }
+  @media (max-width: 80rem) {
+    .card-action {
+      font-size: 2rem; } }
+  @media (max-width: 60rem) {
+    .card-action {
+      font-size: 1.5rem; } }
 
 .card-title {
   font-size: 2.5rem;
@@ -199,6 +223,12 @@ hr {
 
 .card-content {
   height: 27rem; }
+  @media (max-width: 80rem) {
+    .card-content {
+      height: 20rem; } }
+  @media (max-width: 60rem) {
+    .card-content {
+      height: 20rem; } }
 
 img {
   max-width: 100%;
@@ -210,6 +240,12 @@ img {
   margin: 0 auto; }
   .apt-header h1 {
     font-size: 7rem; }
+    @media (max-width: 80rem) {
+      .apt-header h1 {
+        font-size: 5rem; } }
+    @media (max-width: 60rem) {
+      .apt-header h1 {
+        font-size: 4rem; } }
 
 .apt1 {
   text-align: center; }
@@ -217,12 +253,24 @@ img {
     min-height: fit-content;
     font-size: 6rem;
     font-weight: bold; }
+    @media (max-width: 80rem) {
+      .apt1__title {
+        font-size: 2.5rem; } }
+    @media (max-width: 60rem) {
+      .apt1__title {
+        font-size: 2rem; } }
   .apt1__img {
     width: 100%;
     background-position: center; }
   .apt1__body {
     min-height: fit-content;
     font-size: 2rem; }
+    @media (max-width: 80rem) {
+      .apt1__body {
+        font-size: 1.8rem; } }
+    @media (max-width: 60rem) {
+      .apt1__body {
+        font-size: 1.5rem; } }
 
 .apt2 {
   text-align: center; }
@@ -230,11 +278,23 @@ img {
     min-height: fit-content;
     font-size: 3rem;
     font-weight: bold; }
+    @media (max-width: 80rem) {
+      .apt2__title {
+        font-size: 2.5rem; } }
+    @media (max-width: 60rem) {
+      .apt2__title {
+        font-size: 2rem; } }
   .apt2__img {
     width: 100%; }
   .apt2__body {
     min-height: fit-content;
     font-size: 2rem; }
+    @media (max-width: 80rem) {
+      .apt2__body {
+        font-size: 1.8rem; } }
+    @media (max-width: 60rem) {
+      .apt2__body {
+        font-size: 1.5rem; } }
 
 .apt3 {
   text-align: center; }
@@ -242,11 +302,23 @@ img {
     min-height: fit-content;
     font-size: 3rem;
     font-weight: bold; }
+    @media (max-width: 80rem) {
+      .apt3__title {
+        font-size: 2.5rem; } }
+    @media (max-width: 60rem) {
+      .apt3__title {
+        font-size: 2rem; } }
   .apt3__img {
     width: 100%; }
   .apt3__body {
     min-height: fit-content;
     font-size: 2rem; }
+    @media (max-width: 80rem) {
+      .apt3__body {
+        font-size: 1.8rem; } }
+    @media (max-width: 60rem) {
+      .apt3__body {
+        font-size: 1.5rem; } }
 
 .apt4 {
   text-align: center; }
@@ -254,12 +326,24 @@ img {
     min-height: fit-content;
     font-size: 3rem;
     font-weight: bold; }
+    @media (max-width: 80rem) {
+      .apt4__title {
+        font-size: 2.5rem; } }
+    @media (max-width: 60rem) {
+      .apt4__title {
+        font-size: 2rem; } }
   .apt4__img {
     width: 100%;
     background-color: purple; }
   .apt4__body {
     min-height: fit-content;
     font-size: 2rem; }
+    @media (max-width: 80rem) {
+      .apt4__body {
+        font-size: 1.8rem; } }
+    @media (max-width: 60rem) {
+      .apt4__body {
+        font-size: 1.5rem; } }
 
 .apt5 {
   text-align: center; }
@@ -267,12 +351,24 @@ img {
     min-height: fit-content;
     font-size: 3rem;
     font-weight: bold; }
+    @media (max-width: 80rem) {
+      .apt5__title {
+        font-size: 2.5rem; } }
+    @media (max-width: 60rem) {
+      .apt5__title {
+        font-size: 2rem; } }
   .apt5__img {
     width: 100%;
     background-color: purple; }
   .apt5__body {
     min-height: fit-content;
     font-size: 2rem; }
+    @media (max-width: 80rem) {
+      .apt5__body {
+        font-size: 1.8rem; } }
+    @media (max-width: 60rem) {
+      .apt5__body {
+        font-size: 1.5rem; } }
 
 .apt6 {
   text-align: center; }
@@ -280,12 +376,24 @@ img {
     min-height: fit-content;
     font-size: 3rem;
     font-weight: bold; }
+    @media (max-width: 80rem) {
+      .apt6__title {
+        font-size: 2.5rem; } }
+    @media (max-width: 60rem) {
+      .apt6__title {
+        font-size: 2rem; } }
   .apt6__img {
     width: 100%;
     background-color: purple; }
   .apt6__body {
     min-height: fit-content;
     font-size: 2rem; }
+    @media (max-width: 80rem) {
+      .apt6__body {
+        font-size: 1.8rem; } }
+    @media (max-width: 60rem) {
+      .apt6__body {
+        font-size: 1.5rem; } }
 
 .apt7 {
   text-align: center; }
@@ -293,12 +401,24 @@ img {
     min-height: fit-content;
     font-size: 3rem;
     font-weight: bold; }
+    @media (max-width: 80rem) {
+      .apt7__title {
+        font-size: 2.5rem; } }
+    @media (max-width: 60rem) {
+      .apt7__title {
+        font-size: 2rem; } }
   .apt7__img {
     width: 100%;
     background-color: purple; }
   .apt7__body {
     min-height: fit-content;
     font-size: 2rem; }
+    @media (max-width: 80rem) {
+      .apt7__body {
+        font-size: 1.8rem; } }
+    @media (max-width: 60rem) {
+      .apt7__body {
+        font-size: 1.5rem; } }
 
 .infoGrid {
   margin: 25rem 0;
@@ -318,7 +438,14 @@ img {
   grid-column: 1;
   max-width: 70rem;
   font-size: 2.5rem;
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto; }
+  @media (max-width: 80rem) {
+    .information__content {
+      font-size: 2rem; } }
+  @media (max-width: 70rem) {
+    .information__content {
+      font-size: 1.8rem; } }
 
 .information__map {
   text-align: center;
@@ -340,6 +467,12 @@ img {
 .information__paragraph {
   font-size: 1.9rem;
   line-height: 1.5; }
+  @media (max-width: 80rem) {
+    .information__paragraph {
+      font-size: 1.6rem; } }
+  @media (max-width: 80rem) {
+    .information__paragraph {
+      font-size: 1.5rem; } }
 
 .information__img {
   background-image: url("/img/Exterior/CA_Front_rezised.jpg");
@@ -348,15 +481,16 @@ img {
   background-position: center;
   background-size: cover;
   height: 60rem;
-  width: 60rem; }
-
-@media (max-width: 100rem) {
-  .information {
-    font-size: 1.5rem; } }
-
-@media (max-width: 70rem) {
-  .information {
-    font-size: 1.2rem; } }
+  width: 60rem;
+  margin: 0 auto; }
+  @media (max-width: 80rem) {
+    .information__img {
+      height: 50rem;
+      width: 50rem; } }
+  @media (max-width: 60rem) {
+    .information__img {
+      height: 50rem;
+      width: 50rem; } }
 
 .facilities {
   grid-column: 2;
@@ -371,10 +505,12 @@ img {
     text-align: center; }
   @media (max-width: 100rem) {
     .facilities {
-      grid-template-columns: repeat(3, 15rem); } }
+      grid-template-columns: repeat(3, 15rem);
+      font-size: 1.5rem; } }
   @media (max-width: 70rem) {
     .facilities {
-      grid-template-columns: repeat(2, 15rem); } }
+      grid-template-columns: repeat(2, 15rem);
+      font-size: 1.3rem; } }
 
 .logo {
   font-size: 3rem; }
@@ -401,9 +537,21 @@ img {
     font-size: 7rem;
     font-weight: bold;
     color: sandybrown; }
+    @media (max-width: 80rem) {
+      .footer__logo {
+        font-size: 5rem; } }
+    @media (max-width: 60rem) {
+      .footer__logo {
+        font-size: 4rem; } }
   .footer__adress {
     font-weight: bold;
     font-size: 2rem; }
+    @media (max-width: 80rem) {
+      .footer__adress {
+        font-size: 1.8rem; } }
+    @media (max-width: 60rem) {
+      .footer__adress {
+        font-size: 1.4rem; } }
 
 .pageHeader {
   grid-column: full-start / full-end;

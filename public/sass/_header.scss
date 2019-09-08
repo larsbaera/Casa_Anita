@@ -9,8 +9,12 @@
 	background-position: center;
 	background-size: cover;
 	height: 85vh;
-
 	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
+
+	@media (max-width: 50rem) {
+		height: 80vh;
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
 }
 
 .button {
@@ -26,6 +30,13 @@
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
+
+	@media (max-width: 80rem) {
+		font-size: 3rem;
+	}
+	@media (max-width: 60rem) {
+		font-size: 2.5rem;
+	}
 }
 
 .downArrow {
@@ -36,6 +47,9 @@
 	// transform: translateY(-5rem);s
 	transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
+	@media (max-width: 60rem) {
+		padding: 1.5rem;
+	}
 }
 hr {
 	position: absolute;
@@ -55,6 +69,9 @@ hr {
 	text-align: center;
 	width: max-content;
 	z-index: 1;
+	@media (orientation: landscape) {
+		top: 12rem;
+	}
 }
 .headerTitle {
 	position: absolute;
@@ -65,35 +82,42 @@ hr {
 	font-weight: bold;
 	z-index: 2;
 	color: white;
+	text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.5);
 
 	@media (max-width: 100rem) {
 		font-size: 8rem;
 	}
 	@media (max-width: 80rem) {
 		font-size: 6rem;
+		// top: .5rem;
+		left: 2rem;
 	}
 	@media (max-width: 60rem) {
-		font-size: 4rem;
+		font-size: 4.5rem;
+		top: .5rem;
+		left: 1.5rem;
 	}
 }
 
 .headerParagraph {
 	font-size: 8rem;
 	margin: 1rem;
+	text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.5);
 	@media (max-width: 80rem) {
 		font-size: 6rem;
 	}
 	@media (max-width: 60rem) {
-		font-size: 4rem;
+		font-size: 4.5rem;
 	}
 }
 .paragraph {
 	font-size: 4rem;
+	text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.5);
 	@media (max-width: 80rem) {
-		font-size: 3rem;
+		font-size: 3.3rem;
 	}
 	@media (max-width: 60rem) {
-		font-size: 2rem;
+		font-size: 2.3rem;
 	}
 }
 .paragraph,

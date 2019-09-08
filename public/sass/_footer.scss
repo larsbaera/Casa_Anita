@@ -1,22 +1,35 @@
-.footer{
-    background-color: $color-grey-dark-2;
-    color:white;
-    margin-top:5rem;
-    font-size:2rem;
-    text-align: center;
+.footer {
+	background-color: $color-grey-dark-2;
+	color: white;
+	margin-top: 5rem;
+	font-size: 2rem;
+	text-align: center;
 
-    &__content{
-        padding: 3rem;
-    }
-    &__logo{
-        font-family: 'Allura', cursive;
-        font-size:7rem;
-        font-weight: bold;
-        color: sandybrown;
-    }
-    &__adress{
-        font-weight: bold;
-        font-size: 2rem;
-    }
+	&__content {
+		padding: 3rem;
+	}
+	&__logo {
+		font-family: 'Allura', cursive;
+		font-size: 7rem;
+		font-weight: bold;
+		color: sandybrown;
+
+		@media (max-width: 80rem) {
+			font-size: 5rem;
+		}
+		@media (max-width: 60rem) {
+			font-size: 4rem;
+		}
+	}
+	&__adress {
+		font-weight: bold;
+		font-size: 2rem;
+
+		@media (max-width: 80rem) {
+			font-size: 1.8rem;
+		}
+		@media (max-width: 60rem) {
+			font-size: 1.4rem;
+		}
+	}
 }
-
