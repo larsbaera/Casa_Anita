@@ -1,44 +1,44 @@
 {
-  "name": "casa_anita",
-  "version": "1.0.0",
-  "description": "Casa Anita webpage",
-  "main": "index.js",
-  "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "devserver": "live-server --browser=firefox",
-    "devStart": "npm-run-all --parallel devserver watch:sass",
-    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
-    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css",
-    "start": "node index.js"
-  },
-  "engines": {
-    "node": "10.16"
-  },
+	"name": "casa_anita",
+	"version": "1.0.0",
+	"description": "Casa Anita webpage",
+	"main": "index.js",
+	"scripts": {
+		"watch:sass": "node-sass public/sass/main.scss public/css/style.css -w",
+		"devserver": "live-server --browser=firefox",
+		"devStart": "npm-run-all --parallel devserver watch:sass",
+		"compile:sass": "node-sass public/sass/main.scss public/css/style.comp.css",
+		"prefix:css": "postcss --use autoprefixer -b 'last 10 versions' public/css/style.comp.css -o public/css/style.prefix.css",
+		"compress:css": "node-sass public/css/style.prefix.css public/css/style.css --output-style compressed",
+		"build:css": "npm-run-all compile:sass prefix:css compress:css",
+		"start": "node index.js"
+	},
+	"engines": {
+		"node": "10.16"
+	},
 
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/larsbaera/casa_anita" 
-  },
-  "author": "Lars-Arne Bæra",
-  "license": "ISC",
-  "devDependencies": {
-    "autoprefixer": "^7.1.4",
-    "concat": "^1.0.3",
-    "dotenv": "^8.0.0",
-    "node-sass": "^4.5.3",
-    "nodemon": "^1.19.1",
-    "npm-run-all": "^4.1.1",
-    "postcss-cli": "^6.1.3",
-    "live-server": "^1.2.1"
-  },
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "fs": "0.0.1-security",
-    "i18next": "^17.0.11",
-    "i18next-express-middleware": "^1.8.0",
-    "i18next-node-fs-backend": "^2.1.3"
-  }
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/larsbaera/casa_anita"
+	},
+	"author": "Lars-Arne Bæra",
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^7.1.4",
+		"concat": "^1.0.3",
+		"dotenv": "^8.0.0",
+		"node-sass": "^4.5.3",
+		"nodemon": "^1.19.1",
+		"npm-run-all": "^4.1.1",
+		"postcss-cli": "^6.1.3",
+		"live-server": "^1.2.1"
+	},
+	"dependencies": {
+		"body-parser": "^1.19.0",
+		"express": "^4.17.1",
+		"fs": "0.0.1-security",
+		"i18next": "^17.0.11",
+		"i18next-express-middleware": "^1.8.0",
+		"i18next-node-fs-backend": "^2.1.3"
+	}
 }

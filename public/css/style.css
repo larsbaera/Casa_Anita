@@ -47,7 +47,7 @@ section {
   margin-bottom: 15rem; }
 
 .parallax {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.2)), url("/img/20170708_164010 (Stor).jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.2)), url("/public/img/20170708_164010 (Stor).jpg");
   background-position: center;
   background-size: cover;
   height: 85vh;
@@ -99,17 +99,38 @@ hr {
   left: 4rem;
   top: 1rem;
   font-family: 'Allura', cursive;
-  font-size: 11rem;
+  font-size: 9rem;
   font-weight: bold;
   z-index: 2;
   color: white; }
+  @media (max-width: 100rem) {
+    .headerTitle {
+      font-size: 8rem; } }
+  @media (max-width: 80rem) {
+    .headerTitle {
+      font-size: 6rem; } }
+  @media (max-width: 60rem) {
+    .headerTitle {
+      font-size: 4rem; } }
 
 .headerParagraph {
   font-size: 8rem;
   margin: 1rem; }
+  @media (max-width: 80rem) {
+    .headerParagraph {
+      font-size: 6rem; } }
+  @media (max-width: 60rem) {
+    .headerParagraph {
+      font-size: 4rem; } }
 
 .paragraph {
   font-size: 4rem; }
+  @media (max-width: 80rem) {
+    .paragraph {
+      font-size: 3rem; } }
+  @media (max-width: 60rem) {
+    .paragraph {
+      font-size: 2rem; } }
 
 .paragraph,
 .headerParagraph {
@@ -316,7 +337,7 @@ img {
   line-height: 1.5; }
 
 .information__img {
-  background-image: url(/img/exterior/CA_Front_rezised.jpeg);
+  background-image: url(/public/img/exterior/CA_Front_rezised.jpeg);
   display: block;
   background-repeat: no-repeat;
   background-position: center;
