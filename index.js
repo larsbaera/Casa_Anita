@@ -9,6 +9,9 @@ const FsBackend = require('i18next-node-fs-backend');
 const bodyParser = require('body-parser');
 const fs = require('fs');
 
+var helmet = require('helmet');
+app.use(helmet());
+
 app.set('port', process.env.PORT || 3000);
 app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/views');
