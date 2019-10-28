@@ -1,289 +1,289 @@
 .grid {
-	display: grid;
-	grid-template-columns: repeat(4, minmax(200px, 1fr));
-	grid-gap: 2rem;
-	margin-top: 5rem;
-	justify-items: center;
-	justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-gap: 2rem;
+  margin-top: 5rem;
+  justify-items: center;
+  justify-content: space-around;
 
-	@media (max-width: 100rem) {
-		grid-template-columns: repeat(3, minmax(300px, 1fr));
-	}
-	@media (max-width: 70rem) {
-		grid-template-columns: repeat(2, minmax(300px, 1fr));
-	}
-	@media (max-width: 50rem) {
-		grid-template-columns: minmax(300px, 1fr);
-	}
+  @media (max-width: 100rem) {
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+  }
+  @media (max-width: 70rem) {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+  @media (max-width: 50rem) {
+    grid-template-columns: minmax(300px, 1fr);
+  }
 }
 
 .room__details {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	justify-content: center;
-	margin: 0;
-	list-style: none;
-	&__item {
-		flex: 1;
-	}
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin: 0;
+  list-style: none;
+  &__item {
+    flex: 1;
+  }
 }
 .Link {
-	display: block;
+  display: block;
 }
 
 .apartments {
-	margin-top: 40rem;
-	@media (max-width: 80rem) {
-		margin-top: 30rem;
-	}
-	@media (max-width: 60rem) {
-		margin-top: 20rem;
-	}
+  margin-top: 40rem;
+  @media (max-width: 80rem) {
+    margin-top: 30rem;
+  }
+  @media (max-width: 60rem) {
+    margin-top: 20rem;
+  }
 }
 
 .card {
-	&-action {
-		font-size: 2.5rem;
-		@media (max-width: 80rem) {
-			font-size: 2rem;
-		}
-		@media (max-width: 60rem) {
-			font-size: 1.5rem;
-		}
-	}
-	&-title {
-		// top:0;
-		font-size: 2.5rem;
-		font-weight: bold;
-	}
-	&-content {
-		height: 27rem;
-		@media (max-width: 80rem) {
-			height: 20rem;
-		}
-		@media (max-width: 60rem) {
-			height: 20rem;
-		}
-	}
+  &-action {
+    font-size: 2.5rem;
+    @media (max-width: 80rem) {
+      font-size: 2rem;
+    }
+    @media (max-width: 60rem) {
+      font-size: 1.5rem;
+    }
+  }
+  &-title {
+    // top:0;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  &-content {
+    height: 27rem;
+    @media (max-width: 80rem) {
+      height: 20rem;
+    }
+    @media (max-width: 60rem) {
+      height: 20rem;
+    }
+  }
 }
 
-img {
-	max-width: 100%;
-	height: auto;
-	background-image: cover;
-}
+// img {
+// 	max-width: 100%;
+// 	height: auto;
+// 	background-image: cover;
+// }
 
 .apt {
-	&-header {
-		text-align: center;
-		margin: 0 auto;
-		& h1 {
-			font-size: 7rem;
-			@media (max-width: 80rem) {
-				font-size: 5rem;
-			}
-			@media (max-width: 60rem) {
-				font-size: 4rem;
-			}
-		}
-	}
+  &-header {
+    text-align: center;
+    margin: 0 auto;
+    & h1 {
+      font-size: 7rem;
+      @media (max-width: 80rem) {
+        font-size: 5rem;
+      }
+      @media (max-width: 60rem) {
+        font-size: 4rem;
+      }
+    }
+  }
 
-	&1 {
-		text-align: center;
+  &1 {
+    text-align: center;
 
-		&__title {
-			min-height: fit-content;
-			font-size: 6rem;
-			font-weight: bold;
-			@media (max-width: 80rem) {
-				font-size: 2.5rem;
-			}
-			@media (max-width: 60rem) {
-				font-size: 2rem;
-			}
-		}
-		&__img {
-			width: 100%;
-			background-position: center;
-		}
-		&__body {
-			min-height: fit-content;
-			font-size: 2rem;
-			@media (max-width: 80rem) {
-				font-size: 1.8rem;
-			}
-			@media (max-width: 60rem) {
-				font-size: 1.5rem;
-			}
-		}
-	}
-	&2 {
-		text-align: center;
-		&__title {
-			min-height: fit-content;
-			font-size: 3rem;
-			font-weight: bold;
-			@media (max-width: 80rem) {
-				font-size: 2.5rem;
-			}
-			@media (max-width: 60rem) {
-				font-size: 2rem;
-			}
-		}
-		&__img {
-			width: 100%;
-		}
-		&__body {
-			min-height: fit-content;
-			font-size: 2rem;
-			@media (max-width: 80rem) {
-				font-size: 1.8rem;
-			}
-			@media (max-width: 60rem) {
-				font-size: 1.5rem;
-			}
-		}
-	}
-	&3 {
-		text-align: center;
-		&__title {
-			min-height: fit-content;
-			font-size: 3rem;
-			font-weight: bold;
-			@media (max-width: 80rem) {
-				font-size: 2.5rem;
-			}
-			@media (max-width: 60rem) {
-				font-size: 2rem;
-			}
-		}
-		&__img {
-			width: 100%;
-		}
-		&__body {
-			min-height: fit-content;
-			font-size: 2rem;
-			@media (max-width: 80rem) {
-				font-size: 1.8rem;
-			}
-			@media (max-width: 60rem) {
-				font-size: 1.5rem;
-			}
-		}
-	}
-	&4 {
-		text-align: center;
-		&__title {
-			min-height: fit-content;
-			font-size: 3rem;
-			font-weight: bold;
-			@media (max-width: 80rem) {
-				font-size: 2.5rem;
-			}
-			@media (max-width: 60rem) {
-				font-size: 2rem;
-			}
-		}
-		&__img {
-			width: 100%;
-			background-color: purple;
-		}
-		&__body {
-			min-height: fit-content;
-			font-size: 2rem;
-			@media (max-width: 80rem) {
-				font-size: 1.8rem;
-			}
-			@media (max-width: 60rem) {
-				font-size: 1.5rem;
-			}
-		}
-	}
+    &__title {
+      min-height: fit-content;
+      font-size: 6rem;
+      font-weight: bold;
+      @media (max-width: 80rem) {
+        font-size: 2.5rem;
+      }
+      @media (max-width: 60rem) {
+        font-size: 2rem;
+      }
+    }
+    &__img {
+      width: 100%;
+      background-position: center;
+    }
+    &__body {
+      min-height: fit-content;
+      font-size: 2rem;
+      @media (max-width: 80rem) {
+        font-size: 1.8rem;
+      }
+      @media (max-width: 60rem) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  &2 {
+    text-align: center;
+    &__title {
+      min-height: fit-content;
+      font-size: 3rem;
+      font-weight: bold;
+      @media (max-width: 80rem) {
+        font-size: 2.5rem;
+      }
+      @media (max-width: 60rem) {
+        font-size: 2rem;
+      }
+    }
+    &__img {
+      width: 100%;
+    }
+    &__body {
+      min-height: fit-content;
+      font-size: 2rem;
+      @media (max-width: 80rem) {
+        font-size: 1.8rem;
+      }
+      @media (max-width: 60rem) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  &3 {
+    text-align: center;
+    &__title {
+      min-height: fit-content;
+      font-size: 3rem;
+      font-weight: bold;
+      @media (max-width: 80rem) {
+        font-size: 2.5rem;
+      }
+      @media (max-width: 60rem) {
+        font-size: 2rem;
+      }
+    }
+    &__img {
+      width: 100%;
+    }
+    &__body {
+      min-height: fit-content;
+      font-size: 2rem;
+      @media (max-width: 80rem) {
+        font-size: 1.8rem;
+      }
+      @media (max-width: 60rem) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  &4 {
+    text-align: center;
+    &__title {
+      min-height: fit-content;
+      font-size: 3rem;
+      font-weight: bold;
+      @media (max-width: 80rem) {
+        font-size: 2.5rem;
+      }
+      @media (max-width: 60rem) {
+        font-size: 2rem;
+      }
+    }
+    &__img {
+      width: 100%;
+      background-color: purple;
+    }
+    &__body {
+      min-height: fit-content;
+      font-size: 2rem;
+      @media (max-width: 80rem) {
+        font-size: 1.8rem;
+      }
+      @media (max-width: 60rem) {
+        font-size: 1.5rem;
+      }
+    }
+  }
 
-	&5 {
-		text-align: center;
-		&__title {
-			min-height: fit-content;
-			font-size: 3rem;
-			font-weight: bold;
-			@media (max-width: 80rem) {
-				font-size: 2.5rem;
-			}
-			@media (max-width: 60rem) {
-				font-size: 2rem;
-			}
-		}
-		&__img {
-			width: 100%;
-			background-color: purple;
-		}
-		&__body {
-			min-height: fit-content;
-			font-size: 2rem;
-			@media (max-width: 80rem) {
-				font-size: 1.8rem;
-			}
-			@media (max-width: 60rem) {
-				font-size: 1.5rem;
-			}
-		}
-	}
-	&6 {
-		text-align: center;
-		&__title {
-			min-height: fit-content;
-			font-size: 3rem;
-			font-weight: bold;
-			@media (max-width: 80rem) {
-				font-size: 2.5rem;
-			}
-			@media (max-width: 60rem) {
-				font-size: 2rem;
-			}
-		}
-		&__img {
-			width: 100%;
-			background-color: purple;
-		}
-		&__body {
-			min-height: fit-content;
-			font-size: 2rem;
-			@media (max-width: 80rem) {
-				font-size: 1.8rem;
-			}
-			@media (max-width: 60rem) {
-				font-size: 1.5rem;
-			}
-		}
-	}
+  &5 {
+    text-align: center;
+    &__title {
+      min-height: fit-content;
+      font-size: 3rem;
+      font-weight: bold;
+      @media (max-width: 80rem) {
+        font-size: 2.5rem;
+      }
+      @media (max-width: 60rem) {
+        font-size: 2rem;
+      }
+    }
+    &__img {
+      width: 100%;
+      background-color: purple;
+    }
+    &__body {
+      min-height: fit-content;
+      font-size: 2rem;
+      @media (max-width: 80rem) {
+        font-size: 1.8rem;
+      }
+      @media (max-width: 60rem) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  &6 {
+    text-align: center;
+    &__title {
+      min-height: fit-content;
+      font-size: 3rem;
+      font-weight: bold;
+      @media (max-width: 80rem) {
+        font-size: 2.5rem;
+      }
+      @media (max-width: 60rem) {
+        font-size: 2rem;
+      }
+    }
+    &__img {
+      width: 100%;
+      background-color: purple;
+    }
+    &__body {
+      min-height: fit-content;
+      font-size: 2rem;
+      @media (max-width: 80rem) {
+        font-size: 1.8rem;
+      }
+      @media (max-width: 60rem) {
+        font-size: 1.5rem;
+      }
+    }
+  }
 
-	&7 {
-		text-align: center;
-		&__title {
-			min-height: fit-content;
-			font-size: 3rem;
-			font-weight: bold;
-			@media (max-width: 80rem) {
-				font-size: 2.5rem;
-			}
-			@media (max-width: 60rem) {
-				font-size: 2rem;
-			}
-		}
-		&__img {
-			width: 100%;
-			background-color: purple;
-		}
-		&__body {
-			min-height: fit-content;
-			font-size: 2rem;
-			@media (max-width: 80rem) {
-				font-size: 1.8rem;
-			}
-			@media (max-width: 60rem) {
-				font-size: 1.5rem;
-			}
-		}
-	}
+  &7 {
+    text-align: center;
+    &__title {
+      min-height: fit-content;
+      font-size: 3rem;
+      font-weight: bold;
+      @media (max-width: 80rem) {
+        font-size: 2.5rem;
+      }
+      @media (max-width: 60rem) {
+        font-size: 2rem;
+      }
+    }
+    &__img {
+      width: 100%;
+      background-color: purple;
+    }
+    &__body {
+      min-height: fit-content;
+      font-size: 2rem;
+      @media (max-width: 80rem) {
+        font-size: 1.8rem;
+      }
+      @media (max-width: 60rem) {
+        font-size: 1.5rem;
+      }
+    }
+  }
 }

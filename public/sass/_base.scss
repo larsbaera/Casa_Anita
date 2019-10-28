@@ -11,77 +11,104 @@ $color-grey-dark-1: #54483a;
 $color-grey-dark-2: #6d5d4b;
 
 // FONT VARIABLES
-$font-primary: 'Nunito', sans-serif;
-$font-display: 'Josefin Sans', sans-serif;
+$font-primary: "Nunito", sans-serif;
+$font-display: "Josefin Sans", sans-serif;
 
 *,
 *::before,
 *::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 body,
 html {
-	height: 100%;
+  height: 100%;
 }
 html {
-	box-sizing: border-box;
-	font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
-
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
 body {
-	background-color: $color-grey-light-1;
-	font-family: $font-primary;
-	color: $color-grey-dark-2;
-	font-weight: 300;
-	line-height: 1.6;
+  background-color: $color-grey-light-1;
+  font-family: $font-primary;
+  color: $color-grey-dark-2;
+  font-weight: 300;
+  line-height: 1.6;
 }
 .site-container {
-	overflow-x: hidden;
+  &__apts {
+    width: 85vw;
+    margin: 0 auto;
+  }
+  overflow-x: hidden;
 }
 
-// .bodyLayout{
-//     width: 90vw;
-//     margin: 30rem auto 0;
-//     // display: grid;
-//     // grid-template-rows: min-content repeat( 5, min-content);
-//     // grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] 1fr [full-end];
-// }
+.bodyLayout {
+  // width: 95vw;
+  // margin: 0 auto;
+}
 
+nav {
+  width: 100vw;
+}
+
+.grid__nav {
+  display: grid;
+  grid-template-columns: 1fr 15rem;
+  &__main {
+    grid-column: 1;
+  }
+  &__nav {
+    grid-column: 2;
+    grid-row: 1;
+    position: relative;
+    & ul {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2.5rem;
+      line-height: 7rem;
+    }
+  }
+}
 .section {
-	&__apartments,
-	&__information,
-	&__gallery,
-	&__map {
-		width: 90vw;
-		margin: 20rem auto 0;
-	}
+  &__apartments,
+  &__information,
+  &__gallery,
+  &__map {
+    width: 90vw;
+    margin: 20rem auto 0;
+  }
 
-	// &__apartments {
-	// 	width: 90vw;
-	// 	// margin: 30rem auto 0;
-	// }
-	// &__information {
-	// 	width: 90vw;
-	// 	//     margin: 30rem auto 0;
-	// }
-	// &__gallery {
-	// 	width: 70rem;
-	// 	//     margin: 30rem auto 0;
-	// }
-	// // &__map {
-	// // }
+  // &__apartments {
+  // 	width: 90vw;
+  // 	// margin: 30rem auto 0;
+  // }
+  // &__information {
+  // 	width: 90vw;
+  // 	//     margin: 30rem auto 0;
+  // }
+  // &__gallery {
+  // 	width: 70rem;
+  // 	//     margin: 30rem auto 0;
+  // }
+  // // &__map {
+  // // }
 }
 
 main {
-	padding: 0;
-	margin: 0;
-	box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
 }
 
 section {
-	margin: 10rem 0;
-	font-size: 1.5rem;
-	text-align: center;
+  margin: 10rem 0;
+  font-size: 1.5rem;
+  // text-align: center;
 }

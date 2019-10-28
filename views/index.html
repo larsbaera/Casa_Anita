@@ -1,333 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- Compiled and minified JavaScript -->
-    <script type="text/JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script
+      type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+    ></script>
     <script content-type="text/javascript" src="/js/i18nextify.min.js"></script>
     <!--load all styles -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Allura&display=swap">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i">
-    <link rel="stylesheet" type="text/css" href="/css/fontawesome-free-5.9.0-web/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/css/flag-icon-css-master/css/flag-icon.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Allura&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/css/fontawesome-free-5.9.0-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/css/flag-icon-css-master/css/flag-icon.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
 
     <title>Casa Anita</title>
     <script>
-        var translation = window.i18nextify.init({
-            saveMissing: true,
-            keyAttr: "i18next-key__Disabled",
-            ignoreWithoutKey: false,
-            namespace: "translation",
-            ns: ["common", "commonNested"],
-            ignoreTags: ["script", "h6"],
-            ignoreIds: ["ignoreMeId"],
-            ignoreClasses: ["ignoreMeClass"]
-            // debug: true,
-            // namespaceFromPath: true,
-            //autorun: false,
-            //dangerouslyUseInnerHtml: true
+      var translation = window.i18nextify.init({
+        saveMissing: true,
+        keyAttr: "i18next-key__Disabled",
+        ignoreWithoutKey: false,
+        namespace: "translation",
+        ns: ["common", "commonNested"],
+        ignoreTags: ["script", "h6"],
+        ignoreIds: ["ignoreMeId"],
+        ignoreClasses: ["ignoreMeClass"]
+
+        // debug: true,
+        // namespaceFromPath: true,
+        //autorun: false,
+        //dangerouslyUseInnerHtml: true
       });
     </script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="site-container">
-    <header class="header">
+      <header class="header">
         <div class="parallax"></div>
         <h1 class="headerTitle">Casa Anita</h1>
         <!-- <hr> -->
         <div class="title">
-            <p class="headerParagraph" >Livigno, Italy</p>
-            <p class="paragraph" >In the heart of the alps</p>
-            <div class="buttons">
-            </div>
+          <p class="headerParagraph">Livigno, Italy</p>
+          <p class="paragraph">In the heart of the alps</p>
+          <div class="buttons"></div>
         </div>
-        <button class="button">Read More <br><i class="downArrow"></i></button>
-    </header>
+        <button class="button">
+          Read More <br /><i class="downArrow"></i>
+        </button>
+      </header>
 
-    <div class="lgSelect" i18next-key="languageSelect">
-            <a i18next-key="languageSelect.no" href="/?lng=no"><span class="flag-icon flag-icon-no"></span></a>
-            <span> | </span>
-            <a i18next-key="languageSelect.en" href="/?lng=en"><span class="flag-icon flag-icon-gb"></span></a>
-            <span> | </span>
-            <a i18next-key="languageSelect.it" href="/?lng=it"><span class="flag-icon flag-icon-it"></span></a>
-    </div>
-    <main>
+      <script>
+        var a = 5;
+      </script>
+
+      <div class="lgSelect" i18next-key="languageSelect">
+        <a i18next-key="languageSelect.no" href="/?lng=no"
+          ><span class="flag-icon flag-icon-no"></span
+        ></a>
+        <span> | </span>
+        <a i18next-key="languageSelect.en" href="/?lng=en"
+          ><span class="flag-icon flag-icon-gb"></span
+        ></a>
+        <span> | </span>
+        <a i18next-key="languageSelect.it" href="/?lng=it"
+          ><span class="flag-icon flag-icon-it"></span
+        ></a>
+      </div>
+      <main>
         <section class="section__apartments">
-            <div class="apt-header">
-                <h1>Our Apartments:</h1>
+          <div class="apt-header">
+            <h1>Our Apartments:</h1>
+          </div>
+          <div class="grid">
+            <div class="card apt1 z-depth-3">
+              <div class="card-image apt1__title">
+                <img
+                  class="apt1__img"
+                  src="/img/resized/Apt1-BEDROOM3.jpg"
+                  alt="Apartment 1"
+                />
+                <span class="card-title">Apartment 1</span>
+              </div>
+              <div class="card-content apt1__body">
+                <ul class="room__details">
+                  <li class="room__details__item">
+                    <i class="fas fa-bed"></i>
+                    <span class="value">Doublebed</span>
+                  </li>
+                  <li class="room__details__item">
+                    <i class="fas fa-male"></i>
+                    <i class="fas fa-female"></i>
+                    <span class="value"> 1-2 Persons</span>
+                  </li>
+                </ul>
+
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Corporis quas, dolor tempore odio possimus fuga libero sit
+                  aliquid temporibus, voluptatem eveniet, accusantium enim?
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="/apartments">Read More</a>
+              </div>
             </div>
-            <div class="grid">
-                <div class="card apt1 z-depth-3">
-                    <div class="card-image apt1__title">
-                        <img class="apt1__img" src="/img/resized/Apt1-BEDROOM3.jpg" alt="Apartment 1">
-                        <span class="card-title">Apartment 1</span>
-                    </div>
-                    <div class="card-content apt1__body">
-                        <ul class="room__details">
-                            <li class="room__details__item">
-                                <i class="fas fa-bed"></i>
-                                <span class="value">Doublebed</span>
-                            </li>
-                            <li class="room__details__item">
-                                <i class="fas fa-male"></i>
-                                <i class="fas fa-female"></i>
-                                <span class="value"> 1-2 Persons</span>
-                            </li>
-                        </ul>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quas, dolor tempore odio
-                            possimus fuga libero sit aliquid temporibus, voluptatem eveniet, accusantium enim?</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
+            <div class="card apt2 z-depth-3">
+              <div class=" card-image apt2__title">
+                <img
+                  src="/img/resized/1CH OVERVIEW II.jpg"
+                  class="apt2__img"
+                  alt="Apartment 2"
+                />
+                <span class="card-title">Apartment 2</span>
+              </div>
 
-
-
-                <div class="card apt2 z-depth-3">
-                    <div class=" card-image apt2__title">
-                        <img src="/img/resized/1CH OVERVIEW II.jpg" class="apt2__img" alt="Apartment 2">
-                        <span class="card-title">Apartment 2</span>
-                    </div>
-
-                    <div class=" card-content apt2__body">
-                        <ul class="room__details">
-                            <li class="room__details__item">
-                                <i class="fas fa-bed"></i>
-                                <span class="value">1 Doublebed</span>
-                            </li>
-                            <li class="room__details__item">
-                                <i class="fas fa-male"></i>
-                                <i class="fas fa-female"></i>
-                                <span class="value"> 1-2 Persons</span>
-                            </li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quas, dolor tempore odio
-                            possimus fuga libero sit aliquid temporibus, voluptatem eveniet, accusantium enim?</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="card apt3 z-depth-3">
-                    <div class="card-image apt3__title">
-                        <img class="apt3__img" src="/img/resized/BILO2PAX - 3 -BEDROOM.jpg" alt="Apartment 3">
-                        <span class="card-title">Apartment 3</span>
-                    </div>
-                    <div class="card-content apt3__body">
-                        <ul class="room__details">
-                            <li class="room__details__item">
-                                <i class="fas fa-bed"></i>
-                                <span class="value">1 Doublebed</span>
-                            </li>
-                            <li class="room__details__item">
-                                <i class="fas fa-male"></i>
-                                <i class="fas fa-female"></i>
-                                <span class="value"> 1-2 Persons</span>
-                            </li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quas, dolor tempore odio
-                            possimus fuga libero sit aliquid temporibus, hic nesciunt quas tempora?</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="card apt4 z-depth-3">
-                    <div class="card-image apt4__title">
-                        <img src="/img/resized/TRILO4PAX - 4 - LIVINGROOM.jpg" class="apt2__img" alt="Apartment 4">
-                        <span class="card-title">Apartment 4</span>
-                    </div>
-                    <div class="card-content apt4__body">
-                        <ul class="room__details">
-                            <li class="room__details__item">
-                                <i class="fas fa-bed"></i>
-                                <span class="value">1 Doublebed 1 Bunkbed</span>
-                            </li>
-                            <li class="room__details__item">
-                                <i class="fas fa-male"></i>
-                                <i class="fas fa-female"></i>
-                                <span class="value"> 2-4 Persons</span>
-                            </li>
-                        </ul>
-                        <p>Loremnesciunt quas tempora ipsum dolor sit nesciunt quas tempora amet, consectetur
-                            adipisicing elit. Corporis Incidunt assumenda soluta, hic
-                            nesciunt quas tempora?</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="card apt5 z-depth-3">
-                    <div class="card-image apt5__title">
-                        <img src="/img/resized/TRILO4PAX - 5 - KITCHEN.jpg" class="apt2__img" alt="Apartment 5">
-                        <span class="card-title">Apartment 5</span>
-                    </div>
-                    <div class="card-content apt5__body">
-                        <ul class="room__details">
-                            <li class="room__details__item">
-                                <i class="fas fa-bed"></i>
-                                <span class="value">2 Doublebeds</span>
-                            </li>
-                            <li class="room__details__item">
-                                <i class="fas fa-male"></i>
-                                <i class="fas fa-female"></i>
-                                <span class="value"> 2-4 Persons</span>
-                            </li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, odio possimus fuga libero sit aliquid temporibus, voluptatem
-                            eveniet,
-                            accusantium enim? Incidunt assumenda soluta, hic nesciunt quas tempora?</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="card apt6 z-depth-3">
-                    <div class="card-image apt6__title">
-                        <img src="/img/resized/MONO2PAX - 6 BED.jpg" class="apt2__img" alt="Apartment 6">
-                        <span class="card-title">Apartment 6</span>
-                    </div>
-                    <div class="card-content apt6__body">
-                        <ul class="room__details">
-                            <li class="room__details__item">
-                                <i class="fas fa-bed"></i>
-                                <span class="value">Doublebed</span>
-                            </li>
-                            <li class="room__details__item">
-                                <i class="fas fa-male"></i>
-                                <i class="fas fa-female"></i>
-                                <span class="value"> 1-2 Persons</span>
-                            </li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quas, dolor tempore odio
-                            possimus fuga libero eveniet, accusantium enim? Incidunt accusantium enim, accusantium? </p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-                <div class="card apt7 z-depth-3">
-                    <div class="card-image apt7__title">
-                        <img src="/img/resized/MONO2PAX - 1S.jpg" class="apt2__img" alt="Apartment 7">
-                        <span class="card-title">Apartment 7</span>
-                    </div>
-                    <div class="card-content apt7__body">
-                        <ul class="room__details">
-                            <li class="room__details__item">
-                                <i class="fas fa-bed"></i>
-                                <span class="value">Doublebed</span>
-                            </li>
-                            <li class="room__details__item">
-                                <i class="fas fa-male"></i>
-                                <i class="fas fa-female"></i>
-                                <span class="value"> 1-2 Persons</span>
-                            </li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quas, dolor tempore odio
-                            voluptatem eveniet, accusantium enim? </p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
+              <div class=" card-content apt2__body">
+                <ul class="room__details">
+                  <li class="room__details__item">
+                    <i class="fas fa-bed"></i>
+                    <span class="value">1 Doublebed</span>
+                  </li>
+                  <li class="room__details__item">
+                    <i class="fas fa-male"></i>
+                    <i class="fas fa-female"></i>
+                    <span class="value"> 1-2 Persons</span>
+                  </li>
+                </ul>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Corporis quas, dolor tempore odio possimus fuga libero sit
+                  aliquid temporibus, voluptatem eveniet, accusantium enim?
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="/apartments">Read More</a>
+              </div>
             </div>
+            <div class="card apt3 z-depth-3">
+              <div class="card-image apt3__title">
+                <img
+                  class="apt3__img"
+                  src="/img/resized/BILO2PAX - 3 -BEDROOM.jpg"
+                  alt="Apartment 3"
+                />
+                <span class="card-title">Apartment 3</span>
+              </div>
+              <div class="card-content apt3__body">
+                <ul class="room__details">
+                  <li class="room__details__item">
+                    <i class="fas fa-bed"></i>
+                    <span class="value">1 Doublebed</span>
+                  </li>
+                  <li class="room__details__item">
+                    <i class="fas fa-male"></i>
+                    <i class="fas fa-female"></i>
+                    <span class="value"> 1-2 Persons</span>
+                  </li>
+                </ul>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Corporis quas, dolor tempore odio possimus fuga libero sit
+                  aliquid temporibus, hic nesciunt quas tempora?
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="/apartments">Read More</a>
+              </div>
+            </div>
+            <div class="card apt4 z-depth-3">
+              <div class="card-image apt4__title">
+                <img
+                  src="/img/resized/TRILO4PAX - 4 - LIVINGROOM.jpg"
+                  class="apt2__img"
+                  alt="Apartment 4"
+                />
+                <span class="card-title">Apartment 4</span>
+              </div>
+              <div class="card-content apt4__body">
+                <ul class="room__details">
+                  <li class="room__details__item">
+                    <i class="fas fa-bed"></i>
+                    <span class="value">1 Doublebed 1 Bunkbed</span>
+                  </li>
+                  <li class="room__details__item">
+                    <i class="fas fa-male"></i>
+                    <i class="fas fa-female"></i>
+                    <span class="value"> 2-4 Persons</span>
+                  </li>
+                </ul>
+                <p>
+                  Loremnesciunt quas tempora ipsum dolor sit nesciunt quas
+                  tempora amet, consectetur adipisicing elit. Corporis Incidunt
+                  assumenda soluta, hic nesciunt quas tempora?
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="/apartments">Read More</a>
+              </div>
+            </div>
+            <div class="card apt5 z-depth-3">
+              <div class="card-image apt5__title">
+                <img
+                  src="/img/resized/TRILO4PAX - 5 - KITCHEN.jpg"
+                  class="apt2__img"
+                  alt="Apartment 5"
+                />
+                <span class="card-title">Apartment 5</span>
+              </div>
+              <div class="card-content apt5__body">
+                <ul class="room__details">
+                  <li class="room__details__item">
+                    <i class="fas fa-bed"></i>
+                    <span class="value">2 Doublebeds</span>
+                  </li>
+                  <li class="room__details__item">
+                    <i class="fas fa-male"></i>
+                    <i class="fas fa-female"></i>
+                    <span class="value"> 2-4 Persons</span>
+                  </li>
+                </ul>
+                <p>
+                  Lorem ipsum dolor sit amet, odio possimus fuga libero sit
+                  aliquid temporibus, voluptatem eveniet, accusantium enim?
+                  Incidunt assumenda soluta, hic nesciunt quas tempora?
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="/apartments">Read More</a>
+              </div>
+            </div>
+            <div class="card apt6 z-depth-3">
+              <div class="card-image apt6__title">
+                <img
+                  src="/img/resized/MONO2PAX - 6 BED.jpg"
+                  class="apt2__img"
+                  alt="Apartment 6"
+                />
+                <span class="card-title">Apartment 6</span>
+              </div>
+              <div class="card-content apt6__body">
+                <ul class="room__details">
+                  <li class="room__details__item">
+                    <i class="fas fa-bed"></i>
+                    <span class="value">Doublebed</span>
+                  </li>
+                  <li class="room__details__item">
+                    <i class="fas fa-male"></i>
+                    <i class="fas fa-female"></i>
+                    <span class="value"> 1-2 Persons</span>
+                  </li>
+                </ul>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Corporis quas, dolor tempore odio possimus fuga libero
+                  eveniet, accusantium enim? Incidunt accusantium enim,
+                  accusantium?
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="/apartments">Read More</a>
+              </div>
+            </div>
+            <div class="card apt7 z-depth-3">
+              <div class="card-image apt7__title">
+                <img
+                  src="/img/resized/MONO2PAX - 1S.jpg"
+                  class="apt2__img"
+                  alt="Apartment 7"
+                />
+                <span class="card-title">Apartment 7</span>
+              </div>
+              <div class="card-content apt7__body">
+                <ul class="room__details">
+                  <li class="room__details__item">
+                    <i class="fas fa-bed"></i>
+                    <span class="value">Doublebed</span>
+                  </li>
+                  <li class="room__details__item">
+                    <i class="fas fa-male"></i>
+                    <i class="fas fa-female"></i>
+                    <span class="value"> 1-2 Persons</span>
+                  </li>
+                </ul>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Corporis quas, dolor tempore odio voluptatem eveniet,
+                  accusantium enim?
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="/apartments">Read More</a>
+              </div>
+            </div>
+          </div>
         </section>
         <section class="section__information">
-            <div class="infoGrid">
-                <div class="information__content">
-                    <h2 class="information__header">Information</h2>
-                    <p class="information__paragraph">Affordable accomadation close to the mountain side, with close
-                        proximity Carosello 3000,
-                        supermarkets,
-                        shopping the countryside. All rooms feature a satellite flat-screen tv, private bathroom, fully
-                        equipped
-                        kitchens. Some feature seating area and/or a balcony.</p>
-                    <p class="information__paragraph">Popular with couples and families as we can accomodate a variety of groups.</p>
-                </div>
-                <div>
-                    <h2 class="facilities__header">We Offer:</h2>
-                    <div class="facilities">
-
-                        <div class="facility__item1">
-                            <i class="logo fas fa-wifi"></i>
-                            <p>Free WiFi included</p>
-                        </div>
-                        <div class="facility__item2">
-                            <i class="logo fas fa-smoking-ban"></i>
-                            <p>Non-smoking rooms</p>
-                        </div>
-                        <div class="facility__item3">
-                            <i class="logo fas fa-paw"></i>
-                            <p>Pets allowed on request</p>
-                        </div>
-                        <div class="facility__item4">
-                            <i class="logo fas fa-parking"></i>
-                            <p>Free Parking included</p>
-                        </div>
-                        <div class="facility__item5">
-                            <i class="logo fas fa-utensils"></i>
-                            <p>Fully equipped Kitchens</p>
-                        </div>
-                        <div class="facility__item6">
-                            <i class="logo fas fa-warehouse"></i>
-                            <p>Storageroom available</p>
-                        </div>
-                    </div>
-                </div>
+          <div class="infoGrid">
+            <div class="information__content">
+              <h2 class="information__header">Information</h2>
+              <p class="information__paragraph">
+                Affordable accomadation close to the mountain side, with close
+                proximity Carosello 3000, supermarkets, shopping the
+                countryside. All rooms feature a satellite flat-screen tv,
+                private bathroom, fully equipped kitchens. Some feature seating
+                area and/or a balcony.
+              </p>
+              <p class="information__paragraph">
+                Popular with couples and families as we can accomodate a variety
+                of groups.
+              </p>
             </div>
+            <div>
+              <h2 class="facilities__header">We Offer:</h2>
+              <div class="facilities">
+                <div class="facility__item1">
+                  <i class="logo fas fa-wifi"></i>
+                  <p>Free WiFi included</p>
+                </div>
+                <div class="facility__item2">
+                  <i class="logo fas fa-smoking-ban"></i>
+                  <p>Non-smoking rooms</p>
+                </div>
+                <div class="facility__item3">
+                  <i class="logo fas fa-paw"></i>
+                  <p>Pets allowed on request</p>
+                </div>
+                <div class="facility__item4">
+                  <i class="logo fas fa-parking"></i>
+                  <p>Free Parking included</p>
+                </div>
+                <div class="facility__item5">
+                  <i class="logo fas fa-utensils"></i>
+                  <p>Fully equipped Kitchens</p>
+                </div>
+                <div class="facility__item6">
+                  <i class="logo fas fa-warehouse"></i>
+                  <p>Storageroom available</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section class="section__gallery">
-            <div class="information__img"></div>
+          <div class="information__img"></div>
         </section>
         <section class="section__map">
-            <div class="information__map">
-                <h2 class="">Here We Are:</h2>
-                <div id="map" translated>
-                    <script>
-                        function initMap() {
-                            var livigno = {
-                                lat: 46.5243623,
-                                lng: 10.1275247
-                            };
-                            var map = new google.maps.Map(document.getElementById('map'), {
-                                zoom: 20,
-                                center: livigno
-                            });
-                            var marker = new google.maps.Marker({
-                                position: livigno,
-                                map: map
-                            });
-                        }
-                    </script>
-                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=ENTERKEYHERE&callback=initMap">
-                    </script>
-                </div>
+          <div class="information__map">
+            <h2 class="">Here We Are:</h2>
+            <div id="map" translated>
+              <script>
+                function initMap() {
+                  var livigno = {
+                    lat: 46.5243623,
+                    lng: 10.1275247
+                  };
+                  var map = new google.maps.Map(
+                    document.getElementById("map"),
+                    {
+                      zoom: 20,
+                      center: livigno
+                    }
+                  );
+                  var marker = new google.maps.Marker({
+                    position: livigno,
+                    map: map
+                  });
+                }
+              </script>
+              <script
+                async
+                defer
+                src="https://maps.googleapis.com/maps/api/js?key=ENTERKEYHERE&callback=initMap"
+              ></script>
             </div>
+          </div>
         </section>
-    </main>
-    <footer class="footer">
+      </main>
+      <footer class="footer">
         <div class="footer__content">
-            <h2 class="footer__logo">Casa Anita Livigno</h2>
-            <div class="footer__adress">
-                <p><span><i class="fas fa-home"></i> Adress:</span> Casa Anita, Via Borch 96, 23041 Livigno SO, Italia
-                </p>
-            </div>
-            <p id="Copyright">Copyright © by Lars-Arne Bæra.</p>
+          <h2 class="footer__logo">Casa Anita Livigno</h2>
+          <div class="footer__adress">
+            <p>
+              <span><i class="fas fa-home"></i> Adress:</span> Casa Anita, Via
+              Borch 96, 23041 Livigno SO, Italia
+            </p>
+          </div>
+          <p id="Copyright">Copyright © by Lars-Arne Bæra.</p>
         </div>
-    </footer>
-</div>
-</body>
-
+      </footer>
+    </div>
+  </body>
 </html>

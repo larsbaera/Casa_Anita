@@ -13,6 +13,10 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; }
 
+.center {
+  margin: 0 auto;
+  text-align: center; }
+
 body {
   background-color: #f9f7f6;
   font-family: "Nunito", sans-serif;
@@ -22,6 +26,28 @@ body {
 
 .site-container {
   overflow-x: hidden; }
+  .site-container__apts {
+    width: 85vw;
+    margin: 0 auto; }
+
+nav {
+  width: 100vw; }
+
+.grid__nav {
+  display: grid;
+  grid-template-columns: 1fr 15rem; }
+  .grid__nav__main {
+    grid-column: 1; }
+  .grid__nav__nav {
+    grid-column: 2;
+    grid-row: 1;
+    position: relative; }
+    .grid__nav__nav ul {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2.5rem;
+      line-height: 7rem; }
 
 .section__apartments, .section__information, .section__gallery, .section__map {
   width: 90vw;
@@ -34,12 +60,21 @@ main {
 
 section {
   margin: 10rem 0;
-  font-size: 1.5rem;
-  text-align: center; }
+  font-size: 1.5rem; }
 
 .header {
   position: relative;
   margin-bottom: 15rem; }
+
+#sidebar-icon {
+  padding-left: 2rem;
+  padding-top: 2rem; }
+
+.sidenav {
+  width: 25rem; }
+
+.materialbox-caption {
+  font-size: 2rem; }
 
 .parallax {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.2)), url("/img/Livigno_Valley.jpg");
@@ -74,7 +109,7 @@ section {
 
 .downArrow {
   border: solid;
-  border-width: 0 .3rem .3rem 0;
+  border-width: 0 0.3rem 0.3rem 0;
   display: inline-block;
   padding: 2rem;
   transform: rotate(45deg);
@@ -90,7 +125,7 @@ hr {
   z-index: 6;
   width: 100%;
   background-color: sandybrown;
-  opacity: .5; }
+  opacity: 0.5; }
 
 .title {
   position: absolute;
@@ -109,7 +144,7 @@ hr {
   position: absolute;
   left: 4rem;
   top: 1rem;
-  font-family: 'Allura', cursive;
+  font-family: "Allura", cursive;
   font-size: 9rem;
   font-weight: bold;
   z-index: 2;
@@ -125,7 +160,7 @@ hr {
   @media (max-width: 60rem) {
     .headerTitle {
       font-size: 4.5rem;
-      top: .5rem;
+      top: 0.5rem;
       left: 1.5rem; } }
 
 .headerParagraph {
@@ -229,11 +264,6 @@ hr {
   @media (max-width: 60rem) {
     .card-content {
       height: 20rem; } }
-
-img {
-  max-width: 100%;
-  height: auto;
-  background-image: cover; }
 
 .apt-header {
   text-align: center;
@@ -450,7 +480,7 @@ img {
 .information__map {
   text-align: center;
   font-size: 3rem;
-  grid-column: center-start /center-end;
+  grid-column: center-start / center-end;
   margin: 10rem 0 10rem 0; }
 
 .information__map h2 {
@@ -489,11 +519,10 @@ img {
       width: 50rem; } }
   @media (max-width: 60rem) {
     .information__img {
-      height: 50rem;
-      width: 50rem; } }
+      height: 40rem;
+      width: 40rem; } }
 
 .facilities {
-  grid-column: 2;
   display: grid;
   grid-template-columns: repeat(3, minmax(15rem, 1fr));
   font-size: 1.8rem;
@@ -553,36 +582,36 @@ img {
       .footer__adress {
         font-size: 1.4rem; } }
 
-.pageHeader {
-  grid-column: full-start / full-end;
-  text-align: center;
+.apartment__header1 {
   font-size: 3rem; }
 
-.apt_display {
-  grid-column: center-start / center-end;
-  font-size: 1.5rem; }
+.apartment__header2 {
+  font-size: 3rem; }
+
+.apartment__paragraph {
+  font-size: 2rem; }
 
 .masonry {
-  display: flex;
-  flex-flow: row wrap;
+  max-width: 140rem;
+  margin: 10rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  justify-items: center;
+  justify-content: center;
+  grid-gap: 2rem;
+  grid-auto-rows: 1fr; }
+  @media (max-width: 1350px) {
+    .masonry {
+      grid-template-columns: repeat(3, minmax(300px, 1fr)); } }
+  @media (max-width: 1000px) {
+    .masonry {
+      grid-template-columns: repeat(2, minmax(100px, 1fr)); } }
+  @media (max-width: 500px) {
+    .masonry {
+      grid-template-columns: repeat(1, minmax(100px, 1fr)); } }
+
+.gallery__img {
   width: 100%;
   height: 100%;
-  padding: .5rem; }
-
-.masonry__brick {
-  flex: auto;
-  height: 150px;
-  min-width: 100px;
-  margin: 5px; }
-
-.masonry__brick:nth-child(4n+1) {
-  width: 250px; }
-
-.masonry__brick:nth-child(4n+2):nth-child(4n+2) {
-  width: 325px; }
-
-.masonry__brick:nth-child(4n+1):nth-child(4n+3) {
-  width: 180px; }
-
-.masonry__brick:nth-child(4n+1):nth-child(4n+4) {
-  width: 380px; }
+  object-fit: cover;
+  background-color: purple; }

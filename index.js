@@ -18,7 +18,7 @@ app.set('views', __dirname + '/views');
 
 i18next.use(FsBackend).init({
 	lng: 'en',
-	preload: [ 'en', 'no', 'it' ],
+	preload: ['en', 'no', 'it'],
 	saveMissing: true,
 	// debug: true,
 	backend: {
@@ -37,11 +37,11 @@ app.post('/locales/add/:lng/:ns', middleware.missingKeyHandler(i18next));
 
 app.use('/locales', express.static('locales'));
 
-app.get('/', function(req, res) {
+app.get('/', function (req, res) {
 	res.sendFile('index.html', { root: __dirname + '/views/' });
 });
-app.get('/monolocale', function(req, res) {
-	res.sendFile('monolocale.html', { root: __dirname + '/views/' });
+app.get('/apartments', function (req, res) {
+	res.sendFile('apartments.html', { root: __dirname + '/views/' });
 });
 
 app.get('/locales/resources.json', middleware.getResourcesHandler(i18next));
