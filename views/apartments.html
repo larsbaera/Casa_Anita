@@ -13,13 +13,72 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://fonts.googleapis.com/css?family=Allura&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
+  />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/css/flag-icon-css-master/css/flag-icon.min.css"
+    />
 
     <link rel="stylesheet" href="/css/style.css" />
     <title>Casa Anita - Apartments</title>
   </head>
   <body class="bodyLayout">
+    <div class="navbar-fixed">
+        <ul id="dropdown1" class="dropdown-content">
+            <li> <a i18next-key="languageSelect.en" href="/apartments?lng=en"><span class="flag-icon flag-icon-gb"></span> English</a></li>
+            <li> <a i18next-key="languageSelect.it" href="/apartments?lng=it"><span class="flag-icon flag-icon-it"></span> Italiano</a></li>
+            <li> <a i18next-key="languageSelect.no" href="/apartments?lng=no"><span class="flag-icon flag-icon-no"></span> Norsk</a></li>
+          </ul>
+      <nav>
+      <div class="nav-wrapper">
+        <a href="/" class="brand-logo headerTitle">Casa Anita</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+             <li><a href="#apartment1">Apartment 1</a></li>
+             <li><a href="#apartment2">Apartment 2</a></li>
+             <li><a href="#apartment3">Apartment 3</a></li>
+             <li><a href="#apartment4">Apartment 4</a></li>
+             <li><a href="#apartment5">Apartment 5</a></li>
+             <li><a href="#apartment6">Apartment 6</a></li>
+             <li><a href="#apartment7">Apartment 7</a></li>
+             <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons left">language</i>Language<i class="material-icons right">arrow_drop_down</i></a></li>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  
+  <ul class="sidenav" id="mobile-demo">
+    <ul class="collection">
+    <li class="collection-header"><h4>Apartments:</h4></li>
+    <li><a href="#apartment1">Apartment 1</a></li>
+    <li><a href="#apartment2">Apartment 2</a></li>
+    <li><a href="#apartment3">Apartment 3</a></li>
+    <li><a href="#apartment4">Apartment 4</a></li>
+    <li><a href="#apartment5">Apartment 5</a></li>
+    <li><a href="#apartment6">Apartment 6</a></li>
+    <li><a href="#apartment7">Apartment 7</a></li>
+    <ul class="collection">
+        <li class="collection-header"><h5><i class="material-icons left">language</i>Language:</h5></li>
+        <li> <a i18next-key="languageSelect.en" href="/?lng=en"><span class="flag-icon flag-icon-gb"></span> English</a></li>
+        <li> <a i18next-key="languageSelect.it" href="/?lng=it"><span class="flag-icon flag-icon-it"></span> Italiano</a></li>
+        <li> <a i18next-key="languageSelect.no" href="/?lng=no"><span class="flag-icon flag-icon-no"></span> Norsk</a></li>
+      </ul>
+  </ul>
+</ul>
 
-    <ul id="slide-out" class="sidenav collection with-header">
+
+    <!-- <ul id="slide-out" class="sidenav collection with-header">
       <div>
           <li class="collection-item"> <a href="/" <h5> <i class="material-icons small"> home</i> Home </h5> </a></li>
         <li class="collection-header"><h5>Apartments</h5></li>
@@ -53,12 +112,12 @@
       data-target="slide-out"
       class="sidenav-trigger show-on-large"
       ><i class="material-icons large">menu</i></a
-    >
+    > -->
     <div class="site-container site-container__apts">
       <div class="grid__nav__main">
         <div class="container">
           <div class="apartment__header1 center">
-            <h1>Our Apartments</h1>
+            <h1 id="header_apartments">Our Apartments:</h1>
           </div>
           <section id="apartment1" class="apartment1 section scrollspy">
             <div class="apartment__display">
@@ -73,7 +132,7 @@
               <div class="masonry">
                 <div class="img__container">
                   <img
-                    src="/img/resized/Apt1-BEDROOM3.jpg"
+                    src="/img/Archive/apt1/BILO 2-3PAX - 1 -  BEDROOM 3.jpg"
                     alt="Image 1"
                     class="gallery__img materialboxed"
                     data-caption="Something"
@@ -81,7 +140,7 @@
                 </div>
                 <div class="img__container">
                   <img
-                    src="/img/resized/Apt1-BEDROOM3.jpg"
+                    src="/img/Archive/apt1/BILO 2-3PAX - 1 - BATHROOM 2.jpg"
                     alt="Image 2"
                     class="gallery__img materialboxed"
                     data-caption="Something"
@@ -89,7 +148,7 @@
                 </div>
                 <div class="img__container">
                   <img
-                    src="/img/resized/Apt1-BEDROOM3.jpg"
+                    src="/img/Archive/apt1/BILO 2-3PAX - 1 - BATHROOM I .jpg"
                     alt="Image 3"
                     class="gallery__img materialboxed"
                     data-caption="Something"
@@ -97,7 +156,7 @@
                 </div>
                 <div class="img__container">
                   <img
-                    src="/img/resized/Apt1-BEDROOM3.jpg"
+                    src="/img/Archive/apt1/BILO 2-3PAX - 1 - BEDROOM 2.jpg"
                     alt="Image 4"
                     class="gallery__img materialboxed"
                     data-caption="Something"
@@ -105,7 +164,7 @@
                 </div>
                 <div class="img__container">
                   <img
-                    src="/img/resized/Apt1-BEDROOM3.jpg"
+                    src="/img/Archive/apt1/BILO 2-3PAX - 1 - BEDROOM.jpg"
                     alt="Image 5"
                     class="gallery__img materialboxed"
                     data-caption="Something"
@@ -113,7 +172,7 @@
                 </div>
                 <div class="img__container">
                   <img
-                    src="/img/resized/Apt1-BEDROOM3.jpg"
+                    src="/img/Archive/apt1/BILO 2-3PAX - 1 - KITCHEN.jpg"
                     alt="Image 6"
                     class="gallery__img materialboxed"
                     data-caption="Something"
@@ -121,7 +180,7 @@
                 </div>
                 <div class="img__container">
                   <img
-                    src="/img/resized/Apt1-BEDROOM3.jpg"
+                    src="/img/Archive/apt1/BILO 2-3PAX - 1 - LIVINGROOM I.jpg"
                     alt="Image 7"
                     class="gallery__img materialboxed"
                     data-caption="Something"
@@ -129,8 +188,40 @@
                 </div>
                 <div class="img__container">
                   <img
-                    src="/img/resized/Apt1-BEDROOM3.jpg"
+                    src="/img/Archive/apt1/BILO 2-3PAX - 1 - LIVINGROOM SOFABED.jpg"
                     alt="Image 8"
+                    class="gallery__img materialboxed"
+                    data-caption="Something"
+                  />
+                </div>
+                <div class="img__container">
+                  <img
+                    src="/img/Archive/apt1/BILO 2-3PAX - 1 - LIVINGROOM.jpg"
+                    alt="Image 9"
+                    class="gallery__img materialboxed"
+                    data-caption="Something"
+                  />
+                </div>
+                <div class="img__container">
+                  <img
+                    src="/img/Archive/apt1/BILO 2-3PAX - 1 - OVERVIEW.jpg"
+                    alt="Image 10"
+                    class="gallery__img materialboxed"
+                    data-caption="Something"
+                  />
+                </div>
+                <div class="img__container">
+                  <img
+                    src="/img/Archive/apt1/BILO 2-3PAX - 1 - Sofabed 2.jpg"
+                    alt="Image 11"
+                    class="gallery__img materialboxed"
+                    data-caption="Something"
+                  />
+                </div>
+                <div class="img__container">
+                  <img
+                    src="/img/Archive/apt1/MAPPA APT. 1.JPG"
+                    alt="Image 12"
                     class="gallery__img materialboxed"
                     data-caption="Something"
                   />
@@ -161,14 +252,26 @@
                 Incidunt, alias.
               </p>
               <div class="masonry">
-                <img src="" alt="Image 1" class="gallery__img" />
-                <img src="" alt="Image 2" class="gallery__img" />
-                <img src="" alt="Image 3" class="gallery__img" />
-                <img src="" alt="Image 4" class="gallery__img" />
-                <img src="" alt="Image 5" class="gallery__img" />
-                <img src="" alt="Image 6" class="gallery__img" />
-                <img src="" alt="Image 7" class="gallery__img" />
-                <img src="" alt="Image 8" class="gallery__img" />
+                  <div class="img__container">
+                <img src="/img/Archive/apt2/1 CH OVERVIEW.jpg" data-caption="Something" alt="Image 1" class="gallery__img materialboxed" />
+                  </div>
+                <div class="img__container">
+
+                <img src="/img/Archive/apt2/1CH BATHROOM.jpg" data-caption="Something" alt="Image 2" class="gallery__img materialboxed" />
+                </div>
+                <div class="img__container">
+
+                <img src="/img/Archive/apt2/1CH KITCHEN.jpg" data-caption="Something" alt="Image 3" class="gallery__img materialboxed" />
+                </div>
+                <div class="img__container">
+
+                <img src="/img/Archive/apt2/1CH MONO MAP.JPG" data-caption="Something" alt="Image 4" class="gallery__img materialboxed" />
+                </div>
+                <div class="img__container">
+
+                <img src="/img/Archive/apt2/1CH OW II.jpg" data-caption="Something" alt="Image 5" class="gallery__img materialboxed" />
+              </div>
+
               </div>
               <p class="apartment__paragraph">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -184,7 +287,7 @@
               </p>
             </div>
           </section>
-          <!--
+          
             <section id="apartment3" class="apartment3">
               <div class="apartment__display">
                 <h1 class="apartment__header2">Apartment 3</h1>
@@ -197,15 +300,16 @@
                 </p>
                 <div class="masonry">
                  
-                  <img src="" alt="Image 1" class="gallery__img" />
-                  <img src="" alt="Image 2" class="gallery__img" />
-                  <img src="" alt="Image 3" class="gallery__img" />
-                  <img src="" alt="Image 4" class="gallery__img" />
-                  <img src="" alt="Image 5" class="gallery__img" />
-                  <img src="" alt="Image 6" class="gallery__img" />
-
-                  <img src="" alt="Image 7" class="gallery__img" />
-                  <img src="" alt="Image 8" class="gallery__img" />
+                  <img src="/img/Archive/apt3/BILO2PAX - 3 -BATHROOM.jpg" alt="Image 1" class="gallery__img materialboxed" data-caption="Something"/>
+                  <img src="/img/Archive/apt3/BILO2PAX - 3 -BEDROOM I.jpg" alt="Image 2" class="gallery__img materialboxed" data-caption="Something"/>
+                  <img src="/img/Archive/apt3/BILO2PAX - 3 -KITCHEN.jpg" alt="Image 4" class="gallery__img materialboxed" data-caption="Something"/>
+                  <img src="/img/Archive/apt3/BILO2PAX - 3 -OVERVIEW II.jpg" alt="Image 5" class="gallery__img materialboxed" data-caption="Something"/>
+                  <img src="/img/Archive/apt3/BILO2PAX - 3 -OVERVIEW.jpg" alt="Image 6" class="gallery__img materialboxed" data-caption="Something"/>
+                  <img src="/img/Archive/apt3/BILO2PAX -3- LIVING.jpg" alt="Image 7" class="gallery__img materialboxed" data-caption="Something"/>
+                  <img src="/img/Archive/apt3/BILO2PAX-3-BEDROOM.jpg" alt="Image 8" class="gallery__img materialboxed" data-caption="Something"/>
+                  <img src="/img/Archive/apt3/BILO2PAX-3-KITCHEN.jpg" alt="Image 8" class="gallery__img materialboxed" data-caption="Something"/>
+                  <img src="/img/Archive/apt3/MAPPA APT. 3.JPG" alt="Image 3" width="440" class="gallery__img materialboxed" data-caption="Something"/>
+                  
                 </div>
                 <p class="apartment__paragraph">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -362,7 +466,7 @@
                   rerum non? Laboriosam, numquam illo!
                 </p>
               </div>
-            </section> -->
+            </section>
         </div>
       </div>
     </div>
@@ -373,6 +477,5 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="/js/app.js"></script>
-    <script></script>
   </body>
 </html>

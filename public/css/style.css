@@ -588,8 +588,21 @@ hr {
 .apartment__header2 {
   font-size: 3rem; }
 
+.apartment__display {
+  text-align: center; }
+
 .apartment__paragraph {
   font-size: 2rem; }
+
+nav ul a {
+  font-size: 1.4rem; }
+
+.right {
+  margin-right: 3rem; }
+
+nav .brand-logo {
+  padding: 0 0 0 3rem;
+  font-size: 3rem; }
 
 .masonry {
   max-width: 140rem;
@@ -610,8 +623,15 @@ hr {
     .masonry {
       grid-template-columns: repeat(1, minmax(100px, 1fr)); } }
 
+#header_apartments {
+  margin-top: 10rem;
+  font-size: 5rem; }
+
 .gallery__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   background-color: purple; }
+
+section {
+  margin: 20rem 0; }

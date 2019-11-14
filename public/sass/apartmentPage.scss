@@ -6,6 +6,7 @@
     font-size: 3rem;
   }
   &__display {
+    text-align: center;
   }
 
   &__paragraph {
@@ -13,6 +14,16 @@
   }
 }
 
+nav ul a {
+  font-size: 1.4rem;
+}
+.right {
+  margin-right: 3rem;
+}
+nav .brand-logo {
+  padding: 0 0 0 3rem;
+  font-size: 3rem;
+}
 .masonry {
   max-width: 140rem;
   margin: 10rem auto;
@@ -34,8 +45,9 @@
   }
 }
 
-.img__container {
-  //   height: 50rem;
+#header_apartments {
+  margin-top: 10rem;
+  font-size: 5rem;
 }
 .gallery__img {
   width: 100%;
@@ -43,6 +55,18 @@
   object-fit: cover;
   background-color: purple;
 }
+
+section {
+  margin: 20rem 0;
+}
+
+// .rotateimg180 {
+//   // -webkit-transform: rotate(270deg);
+//   // -moz-transform: rotate(270deg);
+//   // -ms-transform: rotate(270deg);
+//   // -o-transform: rotate(270deg);
+//   transform: rotate(90deg);
+// }
 // .masonry__brick {
 // 	flex: auto;
 // 	height: 150px;
