@@ -22,9 +22,14 @@ nav ul a {
 }
 nav .brand-logo {
   margin: 0 0 0 4rem;
-  font-size: 5rem;
+  font-size: 4rem;
 }
-
+@media (max-width: 900px) {
+  nav .brand-logo {
+    margin: 0 0 0 0.2rem;
+    font-size: 4rem;
+  }
+}
 nav ul a {
   font-size: 2rem;
 }
@@ -63,30 +68,3 @@ nav i.material-icons {
   object-fit: cover;
   background-color: purple;
 }
-
-// .rotateimg180 {
-//   // -webkit-transform: rotate(270deg);
-//   // -moz-transform: rotate(270deg);
-//   // -ms-transform: rotate(270deg);
-//   // -o-transform: rotate(270deg);
-//   transform: rotate(90deg);
-// }
-// .masonry__brick {
-// 	flex: auto;
-// 	height: 150px;
-// 	min-width: 100px;
-// 	margin: 5px;
-// }
-
-// .masonry__brick:nth-child(4n + 1) {
-// 	width: 250px;
-// }
-// .masonry__brick:nth-child(4n + 2):nth-child(4n + 2) {
-// 	width: 325px;
-// }
-// .masonry__brick:nth-child(4n + 1):nth-child(4n + 3) {
-// 	width: 180px;
-// }
-// .masonry__brick:nth-child(4n + 1):nth-child(4n + 4) {
-// 	width: 380px;
-// }

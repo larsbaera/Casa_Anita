@@ -66,41 +66,68 @@
 
   <body>
     <div class="site-container">
-      
-          <nav>
-            <div class="nav-wrapper">
-              <a href="/" class="brand-logo headerTitle">Casa Anita</a>
-              <a href="#" data-target="mobile-demo" id="hamburger" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
-              <ul id="nav-mobile" class="right hide-on-med-and-down">
-                  <li><a href="/apartments">Our Apartments</a></li>   
-                  <li> <a i18next-key="languageSelect.en" href="/?lng=en"><span class="flag-icon flag-icon-gb"></span> </a></li>
-                  <li> <a i18next-key="languageSelect.it" href="/?lng=it"><span class="flag-icon flag-icon-it"></span></a></li>
-                  <li> <a i18next-key="languageSelect.no" href="/?lng=no"><span class="flag-icon flag-icon-no"></span></a></li>
-              </ul>
-            </div>
-          </nav>
-        
-        <ul class="sidenav" id="mobile-demo" style="padding-left:2rem">
-          <li><h3 class="sidenav-header">Menu:</h3></li>
-          <ul class="">
-            <li class="collection-header"><h3><i class="material-icons left">language</i>Language:</h3></li>
-            <li> <a i18next-key="languageSelect.en" href="/?lng=en"><span class="flag-icon flag-icon-gb"></span> English</a></li>
-            <li> <a i18next-key="languageSelect.it" href="/?lng=it"><span class="flag-icon flag-icon-it"></span> Italiano</a></li>
-            <li> <a i18next-key="languageSelect.no" href="/?lng=no"><span class="flag-icon flag-icon-no"></span> Norsk</a></li>
-          </ul>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="/" class="brand-logo headerTitle">Casa Anita</a>
+          <a
+            href="#"
+            data-target="mobile-demo"
+            id="hamburger"
+            class="sidenav-trigger show-on-large"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="/apartments">Our Apartments</a></li>
-          </ul>  
+            <li>
+              <a i18next-key="languageSelect.en" href="/?lng=en"
+                ><span class="flag-icon flag-icon-gb"></span>
+              </a>
+            </li>
+            <li>
+              <a i18next-key="languageSelect.it" href="/?lng=it"
+                ><span class="flag-icon flag-icon-it"></span
+              ></a>
+            </li>
+            <li>
+              <a i18next-key="languageSelect.no" href="/?lng=no"
+                ><span class="flag-icon flag-icon-no"></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo" style="padding-left:2rem">
+        <li><h3 class="sidenav-header">Menu:</h3></li>
+        <ul class="">
+          <li class="collection-header">
+            <h3><i class="material-icons left">language</i>Language:</h3>
+          </li>
+          <li>
+            <a i18next-key="languageSelect.en" href="/?lng=en"
+              ><span class="flag-icon flag-icon-gb"></span> English</a
+            >
+          </li>
+          <li>
+            <a i18next-key="languageSelect.it" href="/?lng=it"
+              ><span class="flag-icon flag-icon-it"></span> Italiano</a
+            >
+          </li>
+          <li>
+            <a i18next-key="languageSelect.no" href="/?lng=no"
+              ><span class="flag-icon flag-icon-no"></span> Norsk</a
+            >
+          </li>
+        </ul>
+        <li><a href="/apartments">Our Apartments</a></li>
+      </ul>
       <header class="header">
         <div class="parallax"></div>
-        <!-- <h1 class="headerTitle">Casa Anita</h1> -->
         <div class="title">
           <p class="headerParagraph">Livigno, Italy</p>
           <p class="paragraph">In the heart of the alps</p>
           <div class="buttons"></div>
         </div>
-        <!-- <button class="button">
-          Read More <br /><i class="downArrow"></i>
-        </button> -->
       </header>
       <main>
         <section class="section__apartments">
@@ -137,7 +164,9 @@
                 </p>
               </div>
               <div class="card-action">
-                <a href="/apartments#apartment1">Read More</a>
+                <a href="/apartments#apartment1" data-target="#apartment1"
+                  >Read More</a
+                >
               </div>
             </div>
 
@@ -170,7 +199,9 @@
                 </p>
               </div>
               <div class="card-action">
-                <a href="/apartments#apartment2">Read More</a>
+                <a href="/apartments#apartment2" data-target="#apartment2"
+                  >Read More</a
+                >
               </div>
             </div>
             <div class="card apt3 z-depth-3">
@@ -201,7 +232,9 @@
                 </p>
               </div>
               <div class="card-action">
-                <a href="/apartments#apartment3">Read More</a>
+                <a href="/apartments#apartment3" data-target="#apartment3"
+                  >Read More</a
+                >
               </div>
             </div>
             <div class="card apt4 z-depth-3">
@@ -232,7 +265,9 @@
                 </p>
               </div>
               <div class="card-action">
-                <a href="/apartments#apartment4">Read More</a>
+                <a href="/apartments#apartment4" data-target="#apartment4"
+                  >Read More</a
+                >
               </div>
             </div>
             <div class="card apt5 z-depth-3">
@@ -263,7 +298,9 @@
                 </p>
               </div>
               <div class="card-action">
-                <a href="/apartments">Read More</a>
+                <a href="/apartments#apartment5" data-target="#apartment5"
+                  >Read More</a
+                >
               </div>
             </div>
             <div class="card apt6 z-depth-3">
@@ -295,7 +332,9 @@
                 </p>
               </div>
               <div class="card-action">
-                <a href="/apartments">Read More</a>
+                <a href="/apartments#apartment6" data-target="#apartment6"
+                  >Read More</a
+                >
               </div>
             </div>
             <div class="card apt7 z-depth-3">
@@ -326,7 +365,9 @@
                 </p>
               </div>
               <div class="card-action">
-                <a href="/apartments#apartment7" data-target="#apartment7">Read More</a>
+                <a href="/apartments#apartment7" data-target="#apartment7"
+                  >Read More</a
+                >
               </div>
             </div>
           </div>
@@ -378,17 +419,28 @@
             </div>
           </div>
         </section>
-        <div class="carousel_div"><h2 class="gallery_header">Gallery:</h2></div>
-        <div class="carousel">
-            <a class="carousel-item" href="#one!"><img src="/img/Exterior/gallery5.jpg"></a>
-            <a class="carousel-item" href="#two!"><img src="/img/Exterior/gallery1.jpg"></a>
-            <a class="carousel-item" href="#three!"><img src="/img/Exterior/gallery2.jpg"></a>
-            <a class="carousel-item" href="#four!"><img src="/img/Exterior/gallery3.jpg"></a>
-            <a class="carousel-item" href="#five!"><img src="/img/Exterior/gallery4.jpg"></a>
-          </div>
-        
+
         <section class="section__gallery">
-          <!-- <div class="information__img"></div> -->
+          <div class="carousel_div">
+            <h2 class="gallery_header">Gallery:</h2>
+          </div>
+          <div class="carousel">
+            <a class="carousel-item" href="#one!"
+              ><img src="/img/Exterior/gallery5.jpg"
+            /></a>
+            <a class="carousel-item" href="#two!"
+              ><img src="/img/Exterior/gallery1.jpg"
+            /></a>
+            <a class="carousel-item" href="#three!"
+              ><img src="/img/Exterior/gallery2.jpg"
+            /></a>
+            <a class="carousel-item" href="#four!"
+              ><img src="/img/Exterior/gallery3.jpg"
+            /></a>
+            <a class="carousel-item" href="#five!"
+              ><img src="/img/Exterior/gallery4.jpg"
+            /></a>
+          </div>
         </section>
         <section class="section__map">
           <div class="information__map">
@@ -436,14 +488,12 @@
       </footer>
     </div>
     <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"
-  ></script>
-   <!-- Compiled and minified JavaScript -->
-   <script 
-   src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
- ></script>
-  <script src="/js/app.js"></script>
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/js/app.js"></script>
   </body>
 </html>

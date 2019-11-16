@@ -3,8 +3,8 @@
   perspective: 60rem;
 
   .carousel-item {
-    width: 80rem;
-    height: 80rem;
+    width: 70rem;
+    height: 70rem;
 
     img {
       width: 100%;
@@ -19,4 +19,25 @@
 .gallery_header {
   font-size: 4rem;
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .carousel {
+    height: 70rem;
+    perspective: 60rem;
+  }
+  .carousel .carousel-item {
+    width: 50rem;
+    height: 50rem;
+  }
+}
+@media (max-width: 900px) {
+  .carousel {
+    height: 50rem;
+    perspective: 60rem;
+  }
+  .carousel .carousel-item {
+    width: 30rem;
+    height: 30rem;
+  }
 }

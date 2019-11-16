@@ -267,6 +267,10 @@ hr {
     .card-content {
       height: 20rem; } }
 
+.full_width_map {
+  max-width: 80rem;
+  margin: 0 auto; }
+
 .apt-header {
   text-align: center;
   margin: 0 auto; }
@@ -563,14 +567,30 @@ hr {
   height: 90rem;
   perspective: 60rem; }
   .carousel .carousel-item {
-    width: 80rem;
-    height: 80rem; }
+    width: 70rem;
+    height: 70rem; }
     .carousel .carousel-item img {
       width: 100%; }
 
 .gallery_header {
   font-size: 4rem;
   text-align: center; }
+
+@media (max-width: 1200px) {
+  .carousel {
+    height: 70rem;
+    perspective: 60rem; }
+  .carousel .carousel-item {
+    width: 50rem;
+    height: 50rem; } }
+
+@media (max-width: 900px) {
+  .carousel {
+    height: 50rem;
+    perspective: 60rem; }
+  .carousel .carousel-item {
+    width: 30rem;
+    height: 30rem; } }
 
 .footer {
   background-color: #6d5d4b;
@@ -621,7 +641,12 @@ nav ul a {
 
 nav .brand-logo {
   margin: 0 0 0 4rem;
-  font-size: 5rem; }
+  font-size: 4rem; }
+
+@media (max-width: 900px) {
+  nav .brand-logo {
+    margin: 0 0 0 0.2rem;
+    font-size: 4rem; } }
 
 nav ul a {
   font-size: 2rem; }
