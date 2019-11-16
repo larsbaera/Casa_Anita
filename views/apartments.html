@@ -9,6 +9,7 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <script content-type="text/javascript" src="/js/i18nextify.min.js"></script>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -42,7 +43,7 @@
       <nav>
       <div class="nav-wrapper">
         <a href="/" class="brand-logo headerTitle">Casa Anita</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
              <li><a href="#apartment1">Apartment 1</a></li>
              <li><a href="#apartment2">Apartment 2</a></li>
@@ -52,14 +53,12 @@
              <li><a href="#apartment6">Apartment 6</a></li>
              <li><a href="#apartment7">Apartment 7</a></li>
              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons left">language</i>Language<i class="material-icons right">arrow_drop_down</i></a></li>
-          </li>
         </ul>
       </div>
     </nav>
   </div>
   
   <ul class="sidenav" id="mobile-demo">
-    <ul class="collection">
     <li class="collection-header"><h4>Apartments:</h4></li>
     <li><a href="#apartment1">Apartment 1</a></li>
     <li><a href="#apartment2">Apartment 2</a></li>
@@ -74,7 +73,6 @@
         <li> <a i18next-key="languageSelect.it" href="/?lng=it"><span class="flag-icon flag-icon-it"></span> Italiano</a></li>
         <li> <a i18next-key="languageSelect.no" href="/?lng=no"><span class="flag-icon flag-icon-no"></span> Norsk</a></li>
       </ul>
-  </ul>
 </ul>
 
 
@@ -132,7 +130,7 @@
               <div class="masonry">
                 <div class="img__container">
                   <img
-                    src="/img/Archive/apt1/BILO 2-3PAX - 1 -  BEDROOM 3.jpg"
+                    src="/img/Archive/apt1/resized/apt1_bedroom.jpg"
                     alt="Image 1"
                     class="gallery__img materialboxed"
                     data-caption="Something"
@@ -140,47 +138,23 @@
                 </div>
                 <div class="img__container">
                   <img
-                    src="/img/Archive/apt1/BILO 2-3PAX - 1 - BATHROOM 2.jpg"
+                    src="/img/Archive/apt1/resized/apt1_bathroom.jpg"
                     alt="Image 2"
                     class="gallery__img materialboxed"
                     data-caption="Something"
                   />
                 </div>
+                  <div class="img__container">
+                    <img
+                      src="/img/Archive/apt1/resized/apt1_kitchen.jpg"
+                      alt="Image 11"
+                      class="gallery__img materialboxed"
+                      data-caption="Something"
+                    />
+                  </div>
                 <div class="img__container">
                   <img
-                    src="/img/Archive/apt1/BILO 2-3PAX - 1 - BATHROOM I .jpg"
-                    alt="Image 3"
-                    class="gallery__img materialboxed"
-                    data-caption="Something"
-                  />
-                </div>
-                <div class="img__container">
-                  <img
-                    src="/img/Archive/apt1/BILO 2-3PAX - 1 - BEDROOM 2.jpg"
-                    alt="Image 4"
-                    class="gallery__img materialboxed"
-                    data-caption="Something"
-                  />
-                </div>
-                <div class="img__container">
-                  <img
-                    src="/img/Archive/apt1/BILO 2-3PAX - 1 - BEDROOM.jpg"
-                    alt="Image 5"
-                    class="gallery__img materialboxed"
-                    data-caption="Something"
-                  />
-                </div>
-                <div class="img__container">
-                  <img
-                    src="/img/Archive/apt1/BILO 2-3PAX - 1 - KITCHEN.jpg"
-                    alt="Image 6"
-                    class="gallery__img materialboxed"
-                    data-caption="Something"
-                  />
-                </div>
-                <div class="img__container">
-                  <img
-                    src="/img/Archive/apt1/BILO 2-3PAX - 1 - LIVINGROOM I.jpg"
+                    src="/img/Archive/apt1/resized/apt1_livingroom1.jpg"
                     alt="Image 7"
                     class="gallery__img materialboxed"
                     data-caption="Something"
@@ -188,7 +162,7 @@
                 </div>
                 <div class="img__container">
                   <img
-                    src="/img/Archive/apt1/BILO 2-3PAX - 1 - LIVINGROOM SOFABED.jpg"
+                    src="/img/Archive/apt1/resized/apt1_livingroom2.jpg"
                     alt="Image 8"
                     class="gallery__img materialboxed"
                     data-caption="Something"
@@ -196,36 +170,22 @@
                 </div>
                 <div class="img__container">
                   <img
-                    src="/img/Archive/apt1/BILO 2-3PAX - 1 - LIVINGROOM.jpg"
+                    src="/img/Archive/apt1/resized/apt1_livingroom3.jpg"
                     alt="Image 9"
                     class="gallery__img materialboxed"
                     data-caption="Something"
-                  />
-                </div>
-                <div class="img__container">
-                  <img
-                    src="/img/Archive/apt1/BILO 2-3PAX - 1 - OVERVIEW.jpg"
-                    alt="Image 10"
-                    class="gallery__img materialboxed"
-                    data-caption="Something"
-                  />
-                </div>
-                <div class="img__container">
-                  <img
-                    src="/img/Archive/apt1/BILO 2-3PAX - 1 - Sofabed 2.jpg"
-                    alt="Image 11"
-                    class="gallery__img materialboxed"
-                    data-caption="Something"
-                  />
-                </div>
-                <div class="img__container">
-                  <img
-                    src="/img/Archive/apt1/MAPPA APT. 1.JPG"
-                    alt="Image 12"
-                    class="gallery__img materialboxed"
-                    data-caption="Something"
-                  />
-                </div>
+                    />
+                  </div>
+              </div>
+              <div class="img__container">
+                  <h3 class="floorplan_header">Floorplan:</h3>
+                <img
+                  src="/img/Archive/apt1/MAPPA APT. 1.JPG"
+                  alt="Image 12"
+                  class="materialboxed center"
+                  data-caption="Something"
+                  width="700"
+                />
               </div>
               <p class="apartment__paragraph">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -265,14 +225,14 @@
                 </div>
                 <div class="img__container">
 
-                <img src="/img/Archive/apt2/1CH MONO MAP.JPG" data-caption="Something" alt="Image 4" class="gallery__img materialboxed" />
+                <img src="/img/Archive/apt2/1CH OW II.jpg" data-caption="Something" alt="Image 4" class="gallery__img materialboxed" />
                 </div>
-                <div class="img__container">
-
-                <img src="/img/Archive/apt2/1CH OW II.jpg" data-caption="Something" alt="Image 5" class="gallery__img materialboxed" />
+                
               </div>
-
-              </div>
+                  <div class="img__container">
+                      <h3 class="floorplan_header">Floorplan:</h3>
+                  <img src="/img/Archive/apt2/1CH MONO MAP.JPG" width="700" data-caption="Something" alt="Image 5" class="materialboxed center" />
+                </div>
               <p class="apartment__paragraph">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Laboriosam molestias in sunt saepe, molestiae et unde labore
@@ -288,7 +248,7 @@
             </div>
           </section>
           
-            <section id="apartment3" class="apartment3">
+            <section id="apartment3" class="apartment3 section scrollspy">
               <div class="apartment__display">
                 <h1 class="apartment__header2">Apartment 3</h1>
                 <p class="apartment__paragraph">
@@ -302,15 +262,17 @@
                  
                   <img src="/img/Archive/apt3/BILO2PAX - 3 -BATHROOM.jpg" alt="Image 1" class="gallery__img materialboxed" data-caption="Something"/>
                   <img src="/img/Archive/apt3/BILO2PAX - 3 -BEDROOM I.jpg" alt="Image 2" class="gallery__img materialboxed" data-caption="Something"/>
-                  <img src="/img/Archive/apt3/BILO2PAX - 3 -KITCHEN.jpg" alt="Image 4" class="gallery__img materialboxed" data-caption="Something"/>
-                  <img src="/img/Archive/apt3/BILO2PAX - 3 -OVERVIEW II.jpg" alt="Image 5" class="gallery__img materialboxed" data-caption="Something"/>
-                  <img src="/img/Archive/apt3/BILO2PAX - 3 -OVERVIEW.jpg" alt="Image 6" class="gallery__img materialboxed" data-caption="Something"/>
-                  <img src="/img/Archive/apt3/BILO2PAX -3- LIVING.jpg" alt="Image 7" class="gallery__img materialboxed" data-caption="Something"/>
-                  <img src="/img/Archive/apt3/BILO2PAX-3-BEDROOM.jpg" alt="Image 8" class="gallery__img materialboxed" data-caption="Something"/>
-                  <img src="/img/Archive/apt3/BILO2PAX-3-KITCHEN.jpg" alt="Image 8" class="gallery__img materialboxed" data-caption="Something"/>
-                  <img src="/img/Archive/apt3/MAPPA APT. 3.JPG" alt="Image 3" width="440" class="gallery__img materialboxed" data-caption="Something"/>
+                  <img src="/img/Archive/apt3/BILO2PAX-3-KITCHEN.jpg" alt="Image 3" class="gallery__img materialboxed" data-caption="Something"/>
                   
+                  
+                  <img src="/img/Archive/apt3/BILO2PAX - 3 -KITCHEN.jpg" alt="Image 4" class="gallery__img materialboxed" data-caption="Something"/>
+                  <img src="/img/Archive/apt3/BILO2PAX -3- LIVING.jpg" alt="Image 5" class="gallery__img materialboxed" data-caption="Something"/>
+                  <img src="/img/Archive/apt3/BILO2PAX-3-BEDROOM.jpg" alt="Image " class="gallery__img materialboxed" data-caption="Something"/>
                 </div>
+                <div class="img__container">
+                    <h3 class="floorplan_header">Floorplan:</h3>
+                <img src="/img/Archive/apt3/MAPPA APT. 3.JPG" width="700" data-caption="Floorplan for apartement 3" alt="Floorplan for apartement 3" class="materialboxed center" />
+              </div>
                 <p class="apartment__paragraph">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Laboriosam molestias in sunt saepe, molestiae et unde labore
@@ -325,7 +287,7 @@
                 </p>
               </div>
             </section>
-            <section id="apartment4" class="apartment4">
+            <section id="apartment4" class="apartment4 section scrollspy">
               <div class="apartment__display">
                 <h1 class="apartment__header2">Apartment 4</h1>
                 <p class="apartment__paragraph">
@@ -361,7 +323,7 @@
                 </p>
               </div>
             </section>
-            <section id="apartment5" class="apartment5">
+            <section id="apartment5" class="apartment5 section scrollspy">
               <div class="apartment__display">
                 <h1 class="apartment__header2">Apartment 5</h1>
                 <p class="apartment__paragraph">
@@ -397,7 +359,7 @@
                 </p>
               </div>
             </section>
-            <section id="apartment6" class="apartment6">
+            <section id="apartment6" class="apartment6 section scrollspy">
               <div class="apartment__display">
                 <h1 class="apartment__header2">Apartment 6</h1>
                 <p class="apartment__paragraph">
@@ -432,7 +394,7 @@
                 </p>
               </div>
             </section>
-            <section id="apartment7" class="apartment7">
+            <section id="apartment7" class="apartment7 section scrollspy">
               <div class="apartment__display">
                 <h1 class="apartment__header2">Apartment 7</h1>
                 <p class="apartment__paragraph">
