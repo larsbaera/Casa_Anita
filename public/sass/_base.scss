@@ -57,6 +57,10 @@ nav {
   width: 100vw;
 }
 
+.btn-large i {
+  font-size: 4rem;
+}
+
 .grid__nav {
   display: grid;
   grid-template-columns: 1fr 15rem;
@@ -82,7 +86,7 @@ nav {
   &__gallery,
   &__map {
     width: 90vw;
-    margin: 20rem auto 0;
+    margin: 10rem auto 0;
   }
 
   // &__apartments {
@@ -108,7 +112,7 @@ main {
 }
 
 section {
-  margin: 10rem 0;
+  margin: 5rem 0;
   font-size: 1.5rem;
   // text-align: center;
 }

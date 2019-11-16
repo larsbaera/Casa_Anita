@@ -21,8 +21,16 @@ nav ul a {
   margin-right: 3rem;
 }
 nav .brand-logo {
-  padding: 0 0 0 3rem;
-  font-size: 3rem;
+  margin: 0 0 0 4rem;
+  font-size: 5rem;
+}
+
+nav ul a {
+  font-size: 2rem;
+}
+
+nav i.material-icons {
+  font-size: 4rem;
 }
 .masonry {
   max-width: 140rem;
@@ -54,10 +62,6 @@ nav .brand-logo {
   height: 100%;
   object-fit: cover;
   background-color: purple;
-}
-
-section {
-  margin: 20rem 0;
 }
 
 // .rotateimg180 {

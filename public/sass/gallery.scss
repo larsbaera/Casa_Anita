@@ -1,3 +1,22 @@
-.carousel-item {
-  object-fit: contain;
+.carousel {
+  height: 90rem;
+  perspective: 60rem;
+
+  .carousel-item {
+    width: 80rem;
+    height: 80rem;
+
+    img {
+      width: 100%;
+    }
+  }
+  //   &_div {
+  //     margin: 0 auto;
+  //     height: 70rem;
+  //     width: auto;
+  //   }
+}
+.gallery_header {
+  font-size: 4rem;
+  text-align: center;
 }

@@ -27,13 +27,13 @@ document.addEventListener("DOMContentLoaded", function() {
   var options = { hover: true, alignment: "right", coverTrigger: false };
   var instances = M.Dropdown.init(elems, options);
 });
-// document.addEventListener("DOMContentLoaded", function() {
-//   var elems = document.querySelectorAll(".carousel");
-//   var options = { fullWidth: true, indicators: true };
-//   var instances = M.Carousel.init(elems, options);
-// });
-$(".carousel.carousel-slider")
-  .carousel({
-    indicators: true
-  })
-  .height(700);
+document.addEventListener("DOMContentLoaded", function() {
+  var elems = document.querySelectorAll(".carousel");
+  var options = {};
+  var instances = M.Carousel.init(elems, options);
+});
+// $(".carousel.carousel-slider")
+//   .carousel({
+//     indicators: true
+//   })
+//   .height(700);

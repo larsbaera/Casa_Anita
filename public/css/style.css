@@ -33,6 +33,9 @@ body {
 nav {
   width: 100vw; }
 
+.btn-large i {
+  font-size: 4rem; }
+
 .grid__nav {
   display: grid;
   grid-template-columns: 1fr 15rem; }
@@ -51,7 +54,7 @@ nav {
 
 .section__apartments, .section__information, .section__gallery, .section__map {
   width: 90vw;
-  margin: 20rem auto 0; }
+  margin: 10rem auto 0; }
 
 main {
   padding: 0;
@@ -59,7 +62,7 @@ main {
   box-sizing: inherit; }
 
 section {
-  margin: 10rem 0;
+  margin: 5rem 0;
   font-size: 1.5rem; }
 
 .header {
@@ -143,7 +146,6 @@ hr {
 .headerTitle {
   position: absolute;
   left: 4rem;
-  top: 1rem;
   font-family: "Allura", cursive;
   font-size: 12rem;
   font-weight: bold;
@@ -451,11 +453,15 @@ hr {
         font-size: 1.5rem; } }
 
 .infoGrid {
-  margin: 25rem 0;
-  padding: 5rem 0;
+  margin: 15rem 0;
+  padding: 7rem 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 3rem; }
+  column-gap: 3rem;
+  background-color: #f1eae6;
+  -webkit-box-shadow: 10px 10px 5px 0px #dedede;
+  -moz-box-shadow: 10px 10px 5px 0px #dedede;
+  box-shadow: 10px 10px 5px 0px #dedede; }
   @media (max-width: 70rem) {
     .infoGrid {
       grid-template-columns: 1fr;
@@ -553,8 +559,18 @@ hr {
 #Copyright {
   font-size: 1rem; }
 
-.carousel-item {
-  object-fit: contain; }
+.carousel {
+  height: 90rem;
+  perspective: 60rem; }
+  .carousel .carousel-item {
+    width: 80rem;
+    height: 80rem; }
+    .carousel .carousel-item img {
+      width: 100%; }
+
+.gallery_header {
+  font-size: 4rem;
+  text-align: center; }
 
 .footer {
   background-color: #6d5d4b;
@@ -604,8 +620,14 @@ nav ul a {
   margin-right: 3rem; }
 
 nav .brand-logo {
-  padding: 0 0 0 3rem;
-  font-size: 3rem; }
+  margin: 0 0 0 4rem;
+  font-size: 5rem; }
+
+nav ul a {
+  font-size: 2rem; }
+
+nav i.material-icons {
+  font-size: 4rem; }
 
 .masonry {
   max-width: 140rem;
@@ -635,6 +657,3 @@ nav .brand-logo {
   height: 100%;
   object-fit: cover;
   background-color: purple; }
-
-section {
-  margin: 20rem 0; }
