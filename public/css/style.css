@@ -127,7 +127,7 @@ hr {
   border-width: 0.3rem;
   z-index: 6;
   width: 100%;
-  background-color: sandybrown;
+  background-color: #6bb9f0;
   opacity: 0.5; }
 
 .title {
@@ -259,16 +259,16 @@ hr {
   font-weight: bold; }
 
 .card-content {
-  height: 27rem; }
+  height: 23rem; }
   @media (max-width: 80rem) {
     .card-content {
       height: 20rem; } }
   @media (max-width: 60rem) {
     .card-content {
-      height: 20rem; } }
+      height: 18rem; } }
 
 .full_width_map {
-  max-width: 80rem;
+  max-width: 50rem;
   margin: 0 auto; }
 
 .apt-header {
@@ -283,177 +283,29 @@ hr {
       .apt-header h1 {
         font-size: 4rem; } }
 
-.apt1 {
+.apt1, .apt2, .apt3, .apt4, .apt5, .apt6, .apt7 {
   text-align: center; }
-  .apt1__title {
+  .apt1__title, .apt2__title, .apt3__title, .apt4__title, .apt5__title, .apt6__title, .apt7__title {
     min-height: fit-content;
     font-size: 6rem;
     font-weight: bold; }
     @media (max-width: 80rem) {
-      .apt1__title {
+      .apt1__title, .apt2__title, .apt3__title, .apt4__title, .apt5__title, .apt6__title, .apt7__title {
         font-size: 2.5rem; } }
     @media (max-width: 60rem) {
-      .apt1__title {
+      .apt1__title, .apt2__title, .apt3__title, .apt4__title, .apt5__title, .apt6__title, .apt7__title {
         font-size: 2rem; } }
-  .apt1__img {
+  .apt1__img, .apt2__img, .apt3__img, .apt4__img, .apt5__img, .apt6__img, .apt7__img {
     width: 100%;
     background-position: center; }
-  .apt1__body {
+  .apt1__body, .apt2__body, .apt3__body, .apt4__body, .apt5__body, .apt6__body, .apt7__body {
     min-height: fit-content;
-    font-size: 2rem; }
+    font-size: 1.9rem; }
     @media (max-width: 80rem) {
-      .apt1__body {
-        font-size: 1.8rem; } }
+      .apt1__body, .apt2__body, .apt3__body, .apt4__body, .apt5__body, .apt6__body, .apt7__body {
+        font-size: 1.7rem; } }
     @media (max-width: 60rem) {
-      .apt1__body {
-        font-size: 1.5rem; } }
-
-.apt2 {
-  text-align: center; }
-  .apt2__title {
-    min-height: fit-content;
-    font-size: 3rem;
-    font-weight: bold; }
-    @media (max-width: 80rem) {
-      .apt2__title {
-        font-size: 2.5rem; } }
-    @media (max-width: 60rem) {
-      .apt2__title {
-        font-size: 2rem; } }
-  .apt2__img {
-    width: 100%; }
-  .apt2__body {
-    min-height: fit-content;
-    font-size: 2rem; }
-    @media (max-width: 80rem) {
-      .apt2__body {
-        font-size: 1.8rem; } }
-    @media (max-width: 60rem) {
-      .apt2__body {
-        font-size: 1.5rem; } }
-
-.apt3 {
-  text-align: center; }
-  .apt3__title {
-    min-height: fit-content;
-    font-size: 3rem;
-    font-weight: bold; }
-    @media (max-width: 80rem) {
-      .apt3__title {
-        font-size: 2.5rem; } }
-    @media (max-width: 60rem) {
-      .apt3__title {
-        font-size: 2rem; } }
-  .apt3__img {
-    width: 100%; }
-  .apt3__body {
-    min-height: fit-content;
-    font-size: 2rem; }
-    @media (max-width: 80rem) {
-      .apt3__body {
-        font-size: 1.8rem; } }
-    @media (max-width: 60rem) {
-      .apt3__body {
-        font-size: 1.5rem; } }
-
-.apt4 {
-  text-align: center; }
-  .apt4__title {
-    min-height: fit-content;
-    font-size: 3rem;
-    font-weight: bold; }
-    @media (max-width: 80rem) {
-      .apt4__title {
-        font-size: 2.5rem; } }
-    @media (max-width: 60rem) {
-      .apt4__title {
-        font-size: 2rem; } }
-  .apt4__img {
-    width: 100%;
-    background-color: purple; }
-  .apt4__body {
-    min-height: fit-content;
-    font-size: 2rem; }
-    @media (max-width: 80rem) {
-      .apt4__body {
-        font-size: 1.8rem; } }
-    @media (max-width: 60rem) {
-      .apt4__body {
-        font-size: 1.5rem; } }
-
-.apt5 {
-  text-align: center; }
-  .apt5__title {
-    min-height: fit-content;
-    font-size: 3rem;
-    font-weight: bold; }
-    @media (max-width: 80rem) {
-      .apt5__title {
-        font-size: 2.5rem; } }
-    @media (max-width: 60rem) {
-      .apt5__title {
-        font-size: 2rem; } }
-  .apt5__img {
-    width: 100%;
-    background-color: purple; }
-  .apt5__body {
-    min-height: fit-content;
-    font-size: 2rem; }
-    @media (max-width: 80rem) {
-      .apt5__body {
-        font-size: 1.8rem; } }
-    @media (max-width: 60rem) {
-      .apt5__body {
-        font-size: 1.5rem; } }
-
-.apt6 {
-  text-align: center; }
-  .apt6__title {
-    min-height: fit-content;
-    font-size: 3rem;
-    font-weight: bold; }
-    @media (max-width: 80rem) {
-      .apt6__title {
-        font-size: 2.5rem; } }
-    @media (max-width: 60rem) {
-      .apt6__title {
-        font-size: 2rem; } }
-  .apt6__img {
-    width: 100%;
-    background-color: purple; }
-  .apt6__body {
-    min-height: fit-content;
-    font-size: 2rem; }
-    @media (max-width: 80rem) {
-      .apt6__body {
-        font-size: 1.8rem; } }
-    @media (max-width: 60rem) {
-      .apt6__body {
-        font-size: 1.5rem; } }
-
-.apt7 {
-  text-align: center; }
-  .apt7__title {
-    min-height: fit-content;
-    font-size: 3rem;
-    font-weight: bold; }
-    @media (max-width: 80rem) {
-      .apt7__title {
-        font-size: 2.5rem; } }
-    @media (max-width: 60rem) {
-      .apt7__title {
-        font-size: 2rem; } }
-  .apt7__img {
-    width: 100%;
-    background-color: purple; }
-  .apt7__body {
-    min-height: fit-content;
-    font-size: 2rem; }
-    @media (max-width: 80rem) {
-      .apt7__body {
-        font-size: 1.8rem; } }
-    @media (max-width: 60rem) {
-      .apt7__body {
+      .apt1__body, .apt2__body, .apt3__body, .apt4__body, .apt5__body, .apt6__body, .apt7__body {
         font-size: 1.5rem; } }
 
 .infoGrid {
@@ -537,7 +389,8 @@ hr {
   grid-template-columns: repeat(3, minmax(15rem, 1fr));
   font-size: 1.8rem;
   text-align: center;
-  justify-content: center; }
+  justify-content: center;
+  row-gap: 3rem; }
   .facilities__header {
     margin: 1rem;
     font-size: 3.5rem;
@@ -549,7 +402,8 @@ hr {
   @media (max-width: 70rem) {
     .facilities {
       grid-template-columns: repeat(2, 15rem);
-      font-size: 1.3rem; } }
+      font-size: 1.3rem;
+      row-gap: 2rem; } }
 
 .logo {
   font-size: 3rem; }
@@ -633,6 +487,9 @@ hr {
 .apartment__paragraph {
   font-size: 2rem; }
 
+nav {
+  background-color: #6bb9f0; }
+
 nav ul a {
   font-size: 1.4rem; }
 
@@ -680,5 +537,4 @@ nav i.material-icons {
 .gallery__img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  background-color: purple; }
+  object-fit: cover; }

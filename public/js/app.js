@@ -32,8 +32,3 @@ document.addEventListener("DOMContentLoaded", function() {
   var options = {};
   var instances = M.Carousel.init(elems, options);
 });
-// $(".carousel.carousel-slider")
-//   .carousel({
-//     indicators: true
-//   })
-//   .height(700);
