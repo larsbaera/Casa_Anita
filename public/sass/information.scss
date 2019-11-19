@@ -1,22 +1,25 @@
 .infoGrid {
   // Main Grid
-
-  margin: 15rem 0;
-  padding: 7rem 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 3rem;
-  background-color: #f1eae6;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(222, 222, 222, 1);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(222, 222, 222, 1);
-  box-shadow: 10px 10px 5px 0px rgba(222, 222, 222, 1);
+
+  &__styling {
+    margin: 15rem 0;
+    padding: 7rem 0;
+    background-color: #f1eae6;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(222, 222, 222, 1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(222, 222, 222, 1);
+    box-shadow: 10px 10px 5px 0px rgba(222, 222, 222, 1);
+  }
 
   @media (max-width: 70rem) {
     grid-template-columns: 1fr;
     row-gap: 5rem;
   }
 }
-
+.margin10rem {
+}
 .information {
   // padding: 0 5rem;
 

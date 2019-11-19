@@ -71,7 +71,7 @@
              <li><a href="#apartment7">Apartment 7</a></li> -->
             <li>
               <a class="dropdown-trigger" href="#!" data-target="dropdown1"
-                ><i class="material-icons left">language</i>Language<i
+                ><i class="material-icons left">language</i>Language:<i
                   class="material-icons right"
                   >arrow_drop_down</i
                 ></a
@@ -93,7 +93,7 @@
       <li><a href="#apartment7">Apartment 7</a></li>
       <ul class="collection">
         <li class="collection-header">
-          <h5><i class="material-icons left">language</i>Language:</h5>
+          <h5><i class="material-icons left">Language</i>Language:</h5>
         </li>
         <li>
           <a i18next-key="languageSelect.en" href="/?lng=en"
@@ -126,15 +126,26 @@
           </div>
           <section id="apartment1" class="apartment1 section scrollspy">
             <div class="apartment__display">
-              <h1 class="apartment__header2">Apartment 1</h1>
-              <p class="apartment__paragraph">
-                The apartment is a two rooms with one bedroom, one living room, bathroom and kitchen.
-                In the bedroom there are a double bed with sheets, and two wardrobes. 
-                The living room contains a fully furnished kitchen, television and a sofa bed for one person. 
-                In the bathroom you will find a shower and fresh towels.
-                The apartment is suitable for two or three persons, particularly fitted for a small family.        
-              </p>
-              <div class="masonry">
+                <div class="infoGrid">
+                    <div>
+                    <h1 class="apartment__header2">Apartment 1</h1>
+                    <p class="apartment__paragraph">
+                      The apartment is a two rooms with one bedroom, one living room, bathroom and kitchen. In the bedroom there are a double bed with sheets, and two wardrobes. The living room contains a fully furnished kitchen, television and a sofa bed for one person. In the bathroom you will find a shower and fresh towels. The apartment is suitable for two or three persons, particularly fitted for a small family.        
+                    </p>
+                    </div>
+                      <div>
+
+                       <h3 class="floorplan_header">Floorplan:</h3>
+                       <img
+                       src="/img/gallery/apt1/apt1_map.jpg"
+                       alt="Image 12"
+                       class="materialboxed center full_width_map"
+                       data-caption="Something"
+                       />
+                      </div>
+                    </div>
+              <h2 class="apartment__display">Gallery:</h2>
+              <div class="galleryGrid">
                 <div class="img__container">
                   <img
                     src="/img/gallery/apt1/apt1_bedroom.jpg"
@@ -185,38 +196,17 @@
                 </div>
               </div>
               <div class="img__container">
-                <h3 class="floorplan_header">Floorplan:</h3>
-                <img
-                  src="/img/gallery/apt1/apt1_map.jpg"
-                  alt="Image 12"
-                  class="materialboxed center full_width_map"
-                  data-caption="Something"
-                />
               </div>
-              <p class="apartment__paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam molestias in sunt saepe, molestiae et unde labore
-                quisquam beatae eligendi facere soluta magnam facilis fugit
-                minus, sapiente culpa autem doloribus.
-              </p>
-              <p class="apartment__paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                cumque placeat illum maiores mollitia quod provident asperiores
-                omnis iure harum quas, quibusdam, rem fugiat vel rerum non?
-                Laboriosam, numquam illo!
-              </p>
             </div>
           </section>
           <section id="apartment2" class="apartment2 section scrollspy">
             <div class="apartment__display">
               <h1 class="apartment__header2">Apartment 2</h1>
               <p class="apartment__paragraph">
-                The apartment is a single room with bathroom and a living area.
-                In the flat there are a double bed (which can eventually become two single beds) with sheets, and a wardrobe.
-                The living area contains a fully furnished kitchen, a table, and television. 
-                In the bathroom you will find a washing machine and fresh towels.                
+                The apartment is a single room with bathroom and a living area. In the flat there are a double bed (which can eventually become two single beds) with sheets, and a wardrobe. The living area contains a fully furnished kitchen, a table, and television. In the bathroom you will find a washing machine and fresh towels.                
               </p>
-              <div class="masonry">
+              <h2 class="apartment__display">Gallery:</h2>
+              <div class="galleryGrid">
                 <div class="img__container">
                   <img
                     src="/img/gallery/apt2/apt2_kitchen.jpg"
@@ -249,8 +239,18 @@
                     class="gallery__img materialboxed"
                   />
                 </div>
+                <div class="img__container" id="map2">
+                  <!-- <h3 class="floorplan_header">Floorplan:</h3> -->
+                  <img
+                    src="/img/gallery/apt2/apt2_map.jpg"
+                    data-caption="Floorplan for apartment 2"
+                    alt="Floorplan for apartment 2"
+                    class="materialboxed gallery__img"
+                  />
+                </div>
               </div>
-              <div class="img__container">
+
+              <!-- <div class="img__container">
                 <h3 class="floorplan_header">Floorplan:</h3>
                 <img
                   src="/img/gallery/apt2/apt2_map.jpg"
@@ -258,33 +258,34 @@
                   alt="Image 5"
                   class="materialboxed center full_width_map"
                 />
-              </div>
-              <p class="apartment__paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam molestias in sunt saepe, molestiae et unde labore
-                quisquam beatae eligendi facere soluta magnam facilis fugit
-                minus, sapiente culpa autem doloribus.
-              </p>
-              <p class="apartment__paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                cumque placeat illum maiores mollitia quod provident asperiores
-                omnis iure harum quas, quibusdam, rem fugiat vel rerum non?
-                Laboriosam, numquam illo!
-              </p>
+              </div> -->
             </div>
           </section>
 
           <section id="apartment3" class="apartment3 section scrollspy">
             <div class="apartment__display">
-              <h1 class="apartment__header2">Apartment 3</h1>
-              <p class="apartment__paragraph">
-                Apartment 1 is a lovely aparment Lorem ipsum dolor sit amet
-                consectetur, adipisicing elit. Tempora voluptatem vero nemo!
-                Laudantium aut libero nihil architecto ducimus impedit numquam,
-                tenetur unde, eaque aliquam aliquid. Illo, labore natus?
-                Incidunt, alias.
-              </p>
-              <div class="masonry">
+              
+              <div class="infoGrid">
+                  <div>
+                      <h1 class="apartment__header2">Apartment 3</h1>
+                      <p class="apartment__paragraph">Two bedroom apartment with balcony. The bedroom has a double bed, a large wardrobe and freshly washed sheets. In the hallway there is a sofa that can be used as a sofa bed in addition to the TV. The bathroom has a toilet, bidet, shower and sink, as well as freshly washed towels. The kitchen is equipped with a hob, fridge and cutlery etc. In addition there is a dining table, kettle and microwave. The apartment is best suited for couples and small families.</p>        
+                  </div>
+                    <div>
+
+                        <div class="img__container">
+                            <h3 class="floorplan_header">Floorplan:</h3>
+                            <img
+                              src="/img/gallery/apt3/apt3_map.jpg"
+                              data-caption="Floorplan for apartement 3"
+                              alt="Floorplan for apartement 3"
+                              class="materialboxed center full_width_map"
+                            />      
+                          </div>
+                  </div>
+                  
+                </div>
+                <h2 class="apartment__display">Gallery:</h2>
+              <div class="galleryGrid">
                 <img
                   src="/img/gallery/apt3/apt3_bedroom1.jpg"
                   alt="Image 1"
@@ -322,16 +323,8 @@
                   data-caption="Something"
                 />
               </div>
-              <div class="img__container">
-                <h3 class="floorplan_header">Floorplan:</h3>
-                <img
-                  src="/img/gallery/apt3/apt3_map.jpg"
-                  data-caption="Floorplan for apartement 3"
-                  alt="Floorplan for apartement 3"
-                  class="materialboxed center full_width_map"
-                />
-              </div>
-              <p class="apartment__paragraph">
+              
+              <!-- <p class="apartment__paragraph">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Laboriosam molestias in sunt saepe, molestiae et unde labore
                 quisquam beatae eligendi facere soluta magnam facilis fugit
@@ -342,21 +335,32 @@
                 cumque placeat illum maiores mollitia quod provident asperiores
                 omnis iure harum quas, quibusdam, rem fugiat vel rerum non?
                 Laboriosam, numquam illo!
-              </p>
+              </p> -->
             </div>
           </section>
           <section id="apartment4" class="apartment4 section scrollspy">
             <div class="apartment__display">
-              <h1 class="apartment__header2">Apartment 4</h1>
-              <p class="apartment__paragraph">
-                The apartment is a three rooms with two bedrooms, one living room, bathroom, kitchen and two balcony.
-                In one bedroom there is a double bed, in the other one bunk bed for two persons, and each room is complete with sheets and a wardrobes. 
-                The living room contains a fully furnished kitchen, microwave, television and a sofa bed for one person. 
-                In the bathroom you will find a shower and fresh towels.
-                The apartment is suitable from 4 persons to 5 persons. 
-                
-              </p>
-              <div class="masonry">
+              
+                <div class="infoGrid">
+                    <div>
+                        <h1 class="apartment__header2">Apartment 4</h1>
+                        <p class="apartment__paragraph">
+                          The apartment is a three rooms with two bedrooms, one living room, bathroom, kitchen and two balcony. In one bedroom there is a double bed, in the other one bunk bed for two persons, and each room is complete with sheets and a wardrobes. The living room contains a fully furnished kitchen, microwave, television and a sofa bed for one person. In the bathroom you will find a shower and fresh towels. The apartment is suitable from 4 persons to 5 persons.</p>
+           
+                    </div>
+                      <div>
+
+                          <h3 class="floorplan_header">Floorplan:</h3>
+                          <img
+                            src="/img/gallery/apt4/apt4_map.jpg"
+                            alt="Floorplan over the apartment"
+                            class="materialboxed center full_width_map"
+                            data-caption="Something"
+                          />
+                      </div>
+                    </div>
+                    <h2 class="apartment__display">Gallery:</h2>
+             <div class="galleryGrid">
                 <img
                   src="/img/gallery/apt4/apt4_livingroom.jpg"
                   alt="Image 1"
@@ -404,34 +408,32 @@
                 />
               </div>
 
-              <h3 class="floorplan_header">Floorplan:</h3>
-              <img
-                src="/img/gallery/apt4/apt4_map.jpg"
-                alt="Floorplan over the apartment"
-                class="materialboxed center full_width_map"
-                data-caption="Something"
-              />
-              <p class="apartment__paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam molestias in sunt saepe, molestiae et unde labore
-                quisquam beatae eligendi facere soluta magnam facilis fugit
-                minus, sapiente culpa autem doloribus.
-              </p>
-              <p class="apartment__paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                cumque placeat illum maiores mollitia quod provident asperiores
-                omnis iure harum quas, quibusdam, rem fugiat vel rerum non?
-                Laboriosam, numquam illo!
-              </p>
+           
             </div>
           </section>
           <section id="apartment5" class="apartment5 section scrollspy">
             <div class="apartment__display">
-              <h1 class="apartment__header2">Apartment 5</h1>
-              <p class="apartment__paragraph">
-                The apartment is a three rooms with two bedrooms, one living room, bathroom, kitchen and two balcony. In one bedroom there is a double bed, in the other two single bed (which can eventually become a double bed), and each room is complete with sheets and a wardrobes. The living room contains a fully furnished kitchen, microwave, television and a sofa bed for one or two persons. In the bathroom you will find a shower and fresh towels. The apartment is suitable from 4 persons to 6 persons.                 
-              </p>
-              <div class="masonry">
+             
+                <div class="infoGrid">
+                    <div>
+                        <h1 class="apartment__header2">Apartment 5</h1>
+                        <p class="apartment__paragraph">
+                          The apartment is a three rooms with two bedrooms, one living room, bathroom, kitchen and two balcony. In one bedroom there is a double bed, in the other two single bed (which can eventually become a double bed), and each room is complete with sheets and a wardrobes. The living room contains a fully furnished kitchen, microwave, television and a sofa bed for one or two persons. In the bathroom you will find a shower and fresh towels. The apartment is suitable from 4 persons to 6 persons.                 
+                        </p>
+                    </div>
+                      <div>
+                          <h3 class="floorplan_header">Floorplan:</h3>
+                          <img
+                            src="/img/gallery/apt5/apt5_map.jpg"
+                            alt="Floorplan for apartment 5"
+                            class="materialboxed center full_width_map"
+                            data-caption="Floorplan for apartmnt 5"
+                          />
+                      </div>
+                    </div>
+             
+                    <h2 class="apartment__display">Gallery:</h2>
+              <div class="galleryGrid">
                 <img
                   src="/img/gallery/apt5/apt5_overview.jpg"
                   alt="Image 1"
@@ -463,28 +465,27 @@
                   class="gallery__img materialboxed"
                 />
               </div>
-              <h3 class="floorplan_header">Floorplan:</h3>
-              <img
-                src="/img/gallery/apt5/apt5_map.jpg"
-                alt="Floorplan over the apartment"
-                class="materialboxed center full_width_map"
-                data-caption="Something"
-              />
-              <p class="apartment__paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam molestias in sunt saepe, molestiae et unde labore quisquam beatae eligendi facere soluta magnam facilis fugit minus, sapiente culpa autem doloribus.
-              </p>
-              <p class="apartment__paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cumque placeat illum maiores mollitia quod provident asperiores omnis iure harum quas, quibusdam, rem fugiat vel rerum non? Laboriosam, numquam illo!
-              </p>
             </div>
           </section>
           <section id="apartment6" class="apartment6 section scrollspy">
             <div class="apartment__display">
-              <h1 class="apartment__header2">Apartment 6</h1>
-              <p class="apartment__paragraph">
-               <strong>Add text here about the floorplan and the facilities of the apartment</strong>
-              </p>
-              <div class="masonry">
+              <div class="infoGrid">
+              <div>
+                <h1 class="apartment__header2">Apartment 6</h1>
+              <p class="apartment__paragraph">Single room apartment with large double bed, wardrobe and freshly washed linen. the bathroom has bidet, toilet, sink and shower. The apartment has a balcony, a small kitchen with a hob, fridge and various appliances. There is also a dining table and TV. The apartment is best suited for singles or couples as there is only sleeping space for 2 people.</p>
+            </div>
+            <div>
+                <h5 class="floorplan_header">Floorplan:</h5>
+                <img
+                  src="/img/gallery/apt6/apt6_map.jpg"
+                  alt="Floorplan for apartment 6"
+                  class="materialboxed center full_width_map"
+                  data-caption="Floorplan for apartment 6"
+                />
+            </div>
+            </div> 
+            <h2 class="apartment__display">Gallery:</h2>
+              <div class="galleryGrid">
                 <img
                   src="/img/gallery/apt6/apt6_overview.jpg"
                   alt="Image 1"
@@ -516,15 +517,9 @@
                   class="gallery__img materialboxed"
                 />
               </div>
-              <h3 class="floorplan_header">Floorplan:</h3>
-              <img
-                src="/img/gallery/apt6/apt6_map.jpg"
-                alt="Floorplan for apartment 6"
-                class="materialboxed center full_width_map"
-                data-caption="Floorplan for apartment 6"
-              />
+        
 
-              <p class="apartment__paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <!-- <p class="apartment__paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Laboriosam molestias in sunt saepe, molestiae et unde labore
                 quisquam beatae eligendi facere soluta magnam facilis fugit
                 minus, sapiente culpa autem doloribus.</p>
@@ -533,19 +528,30 @@
                 cumque placeat illum maiores mollitia quod provident asperiores
                 omnis iure harum quas, quibusdam, rem fugiat vel rerum non?
                 Laboriosam, numquam illo!
-              </p>
+              </p> -->
             </div>
           </section>
           <section id="apartment7" class="apartment7 section scrollspy">
             <div class="apartment__display">
-              <h1 class="apartment__header2">Apartment 7</h1>
-              <p class="apartment__paragraph">
-                The apartment is a single room with bathroom and a living area.
-                In the flat there are a double bed (which can eventually become two single beds) with sheets, and a wardrobe.
-                The living area contains a fully furnished kitchen, microwave, a table, and television. 
-                In the bathroom you will find a shower and fresh towels.
-              </p>
-              <div class="masonry">
+              <div class="infoGrid">
+                <div>
+                    <h1 class="apartment__header2">Apartment 7</h1>
+                <p class="apartment__paragraph">The apartment is a single room with bathroom and a living area. In the flat there are a double bed (which can eventually become two single beds) with sheets, and a wardrobe. The living area contains a fully furnished kitchen, microwave, a table, and television. In the bathroom you will find a shower and fresh towels.</p>
+              </div>
+                <div>
+                    <h4 class="floorplan_header">Floorplan:</h4>
+                <img
+                  src="/img/gallery/apt7/apt7_map.jpg"
+                  alt="Floorplan for the apartment"
+                  class="materialboxed center full_width_map"
+                  data-caption="Floorplan for apartment 7"
+                />
+              </div>
+              </div>
+              
+              <div class = "margin10rem">
+              <h2 class="apartment__display">Gallery:</h2>
+              <div class="galleryGrid">
                 <img
                   src="/img/gallery/apt7/apt7_bed.jpg"
                   alt="Image 1"
@@ -572,26 +578,7 @@
                   class="gallery__img materialboxed"
                 />
               </div>
-              <h3 class="floorplan_header">Floorplan:</h3>
-              <img
-                src="/img/gallery/apt7/apt7_map.jpg"
-                alt="Floorplan for the apartment"
-                class="materialboxed center full_width_map"
-                data-caption="Floorplan for apartment 7"
-              />
-
-              <p class="apartment__paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam molestias in sunt saepe, molestiae et unde labore
-                quisquam beatae eligendi facere soluta magnam facilis fugit
-                minus, sapiente culpa autem doloribus.
-              </p>
-              <p class="apartment__paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                cumque placeat illum maiores mollitia quod provident asperiores
-                omnis iure harum quas, quibusdam, rem fugiat vel rerum non?
-                Laboriosam, numquam illo!
-              </p>
+              </div>
             </div>
           </section>
         </div>

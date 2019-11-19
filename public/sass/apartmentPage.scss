@@ -41,13 +41,12 @@ nav ul a {
 nav i.material-icons {
   font-size: 4rem;
 }
-.masonry {
+
+.galleryGrid {
   max-width: 140rem;
   margin: 10rem auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 1fr));
-  justify-items: center;
-  justify-content: center;
   grid-gap: 2rem;
   grid-auto-rows: 1fr;
 
