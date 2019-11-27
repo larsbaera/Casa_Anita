@@ -27,34 +27,35 @@ body {
 .site-container {
   overflow-x: hidden; }
   .site-container__apts {
-    width: 85vw;
+    width: 100vw;
     margin: 0 auto; }
 
 nav {
-  width: 100vw; }
+  width: 100vw;
+  height: 0; }
+
+.nav {
+  height: 0; }
+  .navbar-fixed {
+    height: 0; }
 
 .btn-large i {
   font-size: 4rem; }
 
-.grid__nav {
-  display: grid;
-  grid-template-columns: 1fr 15rem; }
-  .grid__nav__main {
-    grid-column: 1; }
-  .grid__nav__nav {
-    grid-column: 2;
-    grid-row: 1;
-    position: relative; }
-    .grid__nav__nav ul {
-      position: fixed;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 2.5rem;
-      line-height: 7rem; }
+.section__div {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto; }
 
 .section__apartments, .section__information, .section__gallery, .section__map {
   width: 90vw;
   margin: 10rem auto 0; }
+
+.section__light {
+  background-color: #f9f7f6; }
+
+.section__dark {
+  background-color: #efefef; }
 
 main {
   padding: 0;
@@ -83,11 +84,11 @@ section {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.2)), url("/img/Livigno_Valley.jpg");
   background-position: center;
   background-size: cover;
-  height: 85vh;
+  height: 95vh;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%); }
   @media (max-width: 50rem) {
     .parallax {
-      height: 80vh;
+      height: 90vh;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
 
 .button {
@@ -122,26 +123,45 @@ section {
       padding: 1.5rem; } }
 
 hr {
-  position: absolute;
-  top: 8rem;
-  border-width: 0.3rem;
-  z-index: 6;
-  width: 100%;
-  background-color: #6bb9f0;
-  opacity: 0.5; }
+  margin: 0 5rem; }
 
-.title {
+#HeaderGrid {
   position: absolute;
   top: 20rem;
   left: 50%;
   transform: translateX(-50%);
+  grid-gap: 20rem;
+  align-items: center; }
+
+.title {
   color: black;
   text-align: center;
   width: max-content;
   z-index: 1; }
-  @media (orientation: landscape) {
-    .title {
-      top: 12rem; } }
+
+.right {
+  margin-right: 3rem; }
+
+nav .brand-logo {
+  margin: 0 0 0 4rem;
+  font-size: 6rem; }
+
+@media (max-width: 900px) {
+  nav .brand-logo {
+    margin: 0 0 0 0.2rem;
+    font-size: 4rem; } }
+
+nav ul a {
+  font-size: 2rem; }
+
+nav i.material-icons {
+  font-size: 4rem; }
+
+#apartmentsNav a.brand-logo {
+  color: #b28451; }
+
+#apartmentsNav nav div a {
+  color: #b28451; }
 
 .headerTitle {
   position: absolute;
@@ -149,9 +169,7 @@ hr {
   font-family: "Allura", cursive;
   font-size: 12rem;
   font-weight: bold;
-  z-index: 2;
-  color: white;
-  text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.5); }
+  z-index: 2; }
   @media (max-width: 100rem) {
     .headerTitle {
       font-size: 8rem; } }
@@ -195,8 +213,11 @@ hr {
   margin-top: 5rem; }
 
 .btn {
-  font-size: 5rem;
+  font-size: 2.5rem;
   margin: 3rem; }
+
+a i {
+  font-size: 3rem; }
 
 .lgSelect {
   font-size: 2rem;
@@ -222,6 +243,65 @@ hr {
   @media (max-width: 50rem) {
     .grid {
       grid-template-columns: minmax(300px, 1fr); } }
+
+.rowGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 3rem; }
+  @media (max-width: 70rem) {
+    .rowGrid {
+      grid-template-columns: 1fr;
+      row-gap: 5rem; } }
+
+.colGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem; }
+  .colGrid__2-3 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 3rem; }
+    @media (max-width: 100rem) {
+      .colGrid__2-3 {
+        grid-template-columns: 1fr;
+        row-gap: 2rem; } }
+  @media (max-width: 70rem) {
+    .colGrid {
+      grid-template-columns: 1fr;
+      row-gap: 1rem; } }
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  grid-auto-rows: 1fr; }
+  @media (max-width: 1400px) {
+    .galleryGrid {
+      grid-template-columns: repeat(2, minmax(100px, 1fr)); } }
+  @media (max-width: 600px) {
+    .galleryGrid {
+      grid-template-columns: repeat(1, minmax(100px, 1fr)); } }
+
+.facilitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(15rem, 1fr));
+  justify-content: center;
+  row-gap: 3rem; }
+  @media (max-width: 100rem) {
+    .facilitiesGrid {
+      grid-template-columns: repeat(3, 15rem);
+      font-size: 1.5rem; } }
+  @media (max-width: 70rem) {
+    .facilitiesGrid {
+      grid-template-columns: repeat(2, 15rem);
+      font-size: 1.3rem;
+      row-gap: 2rem; } }
+
+.infoGridTop {
+  padding: 0 0.5rem; }
+
+.infoGridBottom {
+  padding: 0 0.5rem; }
 
 .room__details {
   display: flex;
@@ -268,7 +348,7 @@ hr {
       height: 18rem; } }
 
 .full_width_map {
-  max-width: 35rem;
+  max-width: 45rem;
   margin: 0 auto; }
 
 .apt-header {
@@ -307,22 +387,6 @@ hr {
     @media (max-width: 60rem) {
       .apt1__body, .apt2__body, .apt3__body, .apt4__body, .apt5__body, .apt6__body, .apt7__body {
         font-size: 1.5rem; } }
-
-.infoGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 3rem; }
-  .infoGrid__styling {
-    margin: 15rem 0;
-    padding: 7rem 0;
-    background-color: #f1eae6;
-    -webkit-box-shadow: 10px 10px 5px 0px #dedede;
-    -moz-box-shadow: 10px 10px 5px 0px #dedede;
-    box-shadow: 10px 10px 5px 0px #dedede; }
-  @media (max-width: 70rem) {
-    .infoGrid {
-      grid-template-columns: 1fr;
-      row-gap: 5rem; } }
 
 .information__header {
   font-size: 3.5rem; }
@@ -385,26 +449,21 @@ hr {
       height: 40rem;
       width: 40rem; } }
 
+.infoGrid__styling {
+  margin: 15rem 0;
+  padding: 7rem 0;
+  background-color: #f1eae6;
+  -webkit-box-shadow: 10px 10px 5px 0px #dedede;
+  -moz-box-shadow: 10px 10px 5px 0px #dedede;
+  box-shadow: 10px 10px 5px 0px #dedede; }
+
 .facilities {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(15rem, 1fr));
   font-size: 1.8rem;
-  text-align: center;
-  justify-content: center;
-  row-gap: 3rem; }
+  text-align: center; }
   .facilities__header {
     margin: 1rem;
     font-size: 3.5rem;
     text-align: center; }
-  @media (max-width: 100rem) {
-    .facilities {
-      grid-template-columns: repeat(3, 15rem);
-      font-size: 1.5rem; } }
-  @media (max-width: 70rem) {
-    .facilities {
-      grid-template-columns: repeat(2, 15rem);
-      font-size: 1.3rem;
-      row-gap: 2rem; } }
 
 .logo {
   font-size: 3rem; }
@@ -447,6 +506,9 @@ hr {
     width: 30rem;
     height: 30rem; } }
 
+.galleryDiv {
+  padding: 0 3rem; }
+
 .footer {
   background-color: #6d5d4b;
   color: white;
@@ -477,57 +539,13 @@ hr {
         font-size: 1.4rem; } }
 
 .apartment__header1 {
-  font-size: 3rem; }
+  font-size: 4rem; }
 
 .apartment__header2 {
-  font-size: 3rem; }
-
-.apartment__display {
-  text-align: center; }
+  font-size: 2.5rem; }
 
 .apartment__paragraph {
   font-size: 2rem; }
-
-nav {
-  background-color: #6bb9f0; }
-
-nav ul a {
-  font-size: 1.4rem; }
-
-.right {
-  margin-right: 3rem; }
-
-nav .brand-logo {
-  margin: 0 0 0 4rem;
-  font-size: 4rem; }
-
-@media (max-width: 900px) {
-  nav .brand-logo {
-    margin: 0 0 0 0.2rem;
-    font-size: 4rem; } }
-
-nav ul a {
-  font-size: 2rem; }
-
-nav i.material-icons {
-  font-size: 4rem; }
-
-.galleryGrid {
-  max-width: 140rem;
-  margin: 10rem auto;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 1fr));
-  grid-gap: 2rem;
-  grid-auto-rows: 1fr; }
-  @media (max-width: 1350px) {
-    .galleryGrid {
-      grid-template-columns: repeat(3, minmax(300px, 1fr)); } }
-  @media (max-width: 1000px) {
-    .galleryGrid {
-      grid-template-columns: repeat(2, minmax(100px, 1fr)); } }
-  @media (max-width: 500px) {
-    .galleryGrid {
-      grid-template-columns: repeat(1, minmax(100px, 1fr)); } }
 
 #header_apartments {
   margin-top: 10rem;

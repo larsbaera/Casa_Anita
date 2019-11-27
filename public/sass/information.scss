@@ -1,28 +1,4 @@
-.infoGrid {
-  // Main Grid
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 3rem;
-
-  &__styling {
-    margin: 15rem 0;
-    padding: 7rem 0;
-    background-color: #f1eae6;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(222, 222, 222, 1);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(222, 222, 222, 1);
-    box-shadow: 10px 10px 5px 0px rgba(222, 222, 222, 1);
-  }
-
-  @media (max-width: 70rem) {
-    grid-template-columns: 1fr;
-    row-gap: 5rem;
-  }
-}
-.margin10rem {
-}
 .information {
-  // padding: 0 5rem;
-
   &__header {
     font-size: 3.5rem;
   }
@@ -87,27 +63,22 @@
   }
 }
 
+.infoGrid__styling {
+  margin: 15rem 0;
+  padding: 7rem 0;
+  background-color: #f1eae6;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(222, 222, 222, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(222, 222, 222, 1);
+  box-shadow: 10px 10px 5px 0px rgba(222, 222, 222, 1);
+}
+
 .facilities {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(15rem, 1fr));
   font-size: 1.8rem;
   text-align: center;
-  justify-content: center;
-  row-gap: 3rem;
-
   &__header {
     margin: 1rem;
     font-size: 3.5rem;
     text-align: center;
-  }
-  @media (max-width: 100rem) {
-    grid-template-columns: repeat(3, 15rem);
-    font-size: 1.5rem;
-  }
-  @media (max-width: 70rem) {
-    grid-template-columns: repeat(2, 15rem);
-    font-size: 1.3rem;
-    row-gap: 2rem;
   }
 }
 

@@ -5,7 +5,7 @@ $color-primary-dark: #b28451;
 $color-secondary: #101d2c;
 
 $color-grey-light-1: #f9f7f6;
-$color-grey-light-2: #aaa;
+$color-grey-light-2: #efefef;
 
 $color-grey-dark-1: #54483a;
 $color-grey-dark-2: #6d5d4b;
@@ -42,7 +42,7 @@ body {
 }
 .site-container {
   &__apts {
-    width: 85vw;
+    width: 100vw;
     margin: 0 auto;
   }
   overflow-x: hidden;
@@ -50,32 +50,24 @@ body {
 
 nav {
   width: 100vw;
+  height: 0;
 }
-
+.nav {
+  height: 0;
+  &bar-fixed {
+    height: 0;
+  }
+}
 .btn-large i {
   font-size: 4rem;
 }
 
-.grid__nav {
-  display: grid;
-  grid-template-columns: 1fr 15rem;
-  &__main {
-    grid-column: 1;
-  }
-  &__nav {
-    grid-column: 2;
-    grid-row: 1;
-    position: relative;
-    & ul {
-      position: fixed;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 2.5rem;
-      line-height: 7rem;
-    }
-  }
-}
 .section {
+  &__div {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
   &__apartments,
   &__information,
   &__gallery,
@@ -83,21 +75,12 @@ nav {
     width: 90vw;
     margin: 10rem auto 0;
   }
-
-  // &__apartments {
-  // 	width: 90vw;
-  // 	// margin: 30rem auto 0;
-  // }
-  // &__information {
-  // 	width: 90vw;
-  // 	//     margin: 30rem auto 0;
-  // }
-  // &__gallery {
-  // 	width: 70rem;
-  // 	//     margin: 30rem auto 0;
-  // }
-  // // &__map {
-  // // }
+  &__light {
+    background-color: $color-grey-light-1;
+  }
+  &__dark {
+    background-color: $color-grey-light-2;
+  }
 }
 
 main {

@@ -24,11 +24,11 @@
   // background-image: url('/img/20170708_164010\ \(Stor\).jpg');
   background-position: center;
   background-size: cover;
-  height: 85vh;
+  height: 95vh;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
 
   @media (max-width: 50rem) {
-    height: 80vh;
+    height: 90vh;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
@@ -68,26 +68,52 @@
   }
 }
 hr {
-  position: absolute;
-  top: 8rem;
-  border-width: 0.3rem;
-  z-index: 6;
-  width: 100%;
-  background-color: #6bb9f0;
-  opacity: 0.5;
+  margin: 0 5rem;
 }
-.title {
+#HeaderGrid {
   position: absolute;
   top: 20rem;
   left: 50%;
   transform: translateX(-50%);
+  grid-gap: 20rem;
+  align-items: center;
+}
+.title {
   color: black;
   text-align: center;
   width: max-content;
   z-index: 1;
-  @media (orientation: landscape) {
-    top: 12rem;
+  // @media (orientation: landscape) {
+  //   top: 12rem;
+  // }
+}
+
+.right {
+  margin-right: 3rem;
+}
+nav .brand-logo {
+  margin: 0 0 0 4rem;
+  font-size: 6rem;
+}
+@media (max-width: 900px) {
+  nav .brand-logo {
+    margin: 0 0 0 0.2rem;
+    font-size: 4rem;
   }
+}
+nav ul a {
+  font-size: 2rem;
+}
+
+nav i.material-icons {
+  font-size: 4rem;
+}
+
+#apartmentsNav a.brand-logo {
+  color: $color-primary-dark;
+}
+#apartmentsNav nav div a {
+  color: $color-primary-dark;
 }
 
 .headerTitle {
@@ -97,8 +123,7 @@ hr {
   font-size: 12rem;
   font-weight: bold;
   z-index: 2;
-  color: white;
-  text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.5);
+  // text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 
   @media (max-width: 100rem) {
     font-size: 8rem;
@@ -146,8 +171,11 @@ hr {
   margin-top: 5rem;
 }
 .btn {
-  font-size: 5rem;
+  font-size: 2.5rem;
   margin: 3rem;
+}
+a i {
+  font-size: 3rem;
 }
 
 .lgSelect {

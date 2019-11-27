@@ -1,63 +1,12 @@
 .apartment {
   &__header1 {
-    font-size: 3rem;
-  }
-  &__header2 {
-    font-size: 3rem;
-  }
-  &__display {
-    text-align: center;
-  }
-
-  &__paragraph {
-    font-size: 2rem;
-  }
-}
-
-nav {
-  background-color: #6bb9f0;
-}
-
-nav ul a {
-  font-size: 1.4rem;
-}
-.right {
-  margin-right: 3rem;
-}
-nav .brand-logo {
-  margin: 0 0 0 4rem;
-  font-size: 4rem;
-}
-@media (max-width: 900px) {
-  nav .brand-logo {
-    margin: 0 0 0 0.2rem;
     font-size: 4rem;
   }
-}
-nav ul a {
-  font-size: 2rem;
-}
-
-nav i.material-icons {
-  font-size: 4rem;
-}
-
-.galleryGrid {
-  max-width: 140rem;
-  margin: 10rem auto;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 1fr));
-  grid-gap: 2rem;
-  grid-auto-rows: 1fr;
-
-  @media (max-width: 1350px) {
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
+  &__header2 {
+    font-size: 2.5rem;
   }
-  @media (max-width: 1000px) {
-    grid-template-columns: repeat(2, minmax(100px, 1fr));
-  }
-  @media (max-width: 500px) {
-    grid-template-columns: repeat(1, minmax(100px, 1fr));
+  &__paragraph {
+    font-size: 2rem;
   }
 }
 
