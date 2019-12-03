@@ -14,19 +14,19 @@
     width: 1em; }
 
 .flag-icon-no {
-  background-image: url(./flags/4x3/no.svg); }
+  background-image: url(../css/flags/4x3/no.svg); }
   .flag-icon-no.flag-icon-squared {
-    background-image: url(./flags/1x1/no.svg); }
+    background-image: url(../css/flags/1x1/no.svg); }
 
 .flag-icon-it {
-  background-image: url(./flags/4x3/it.svg); }
+  background-image: url(../css/flags/4x3/it.svg); }
   .flag-icon-it.flag-icon-squared {
-    background-image: url(./flags/1x1/it.svg); }
+    background-image: url(../css/flags/1x1/it.svg); }
 
 .flag-icon-gb {
-  background-image: url(./flags/4x3/gb.svg); }
+  background-image: url(../css/flags/4x3/gb.svg); }
   .flag-icon-gb.flag-icon-squared {
-    background-image: url(./flags/1x1/gb.svg); }
+    background-image: url(../css/flags/1x1/gb.svg); }
 
 /*!
  * Font Awesome Free 5.9.0 by @fontawesome - https://fontawesome.com
