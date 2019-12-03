@@ -7,6 +7,13 @@
   }
   &__paragraph {
     font-size: 2rem;
+    padding: 1rem;
+    @media (max-width: 70rem) {
+      font-size: 1.8rem;
+    }
+    @media (max-width: 50rem) {
+      font-size: 1.6rem;
+    }
   }
 }
 

@@ -1,3 +1,6 @@
+const i18next = require("./i18nextify");
+const materialize = require("./materialize");
+
 document.addEventListener("DOMContentLoaded", function() {
   var elems = document.querySelectorAll(".scrollspy");
   var options = {

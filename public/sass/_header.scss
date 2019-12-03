@@ -75,8 +75,19 @@ hr {
   top: 20rem;
   left: 50%;
   transform: translateX(-50%);
-  grid-gap: 20rem;
+  column-gap: 40rem;
   align-items: center;
+  justify-content: center;
+  @media (max-width: 90rem) {
+    row-gap: 10rem;
+    column-gap: 30rem;
+    top: 17rem;
+  }
+  @media (max-width: 60rem) {
+    grid-gap: 0;
+    row-gap: 5rem;
+    top: 13rem;
+  }
 }
 .title {
   color: black;
@@ -86,6 +97,10 @@ hr {
   // @media (orientation: landscape) {
   //   top: 12rem;
   // }
+}
+
+ul:not(.browser-default) > li {
+  padding-left: 0.8rem;
 }
 
 .right {
